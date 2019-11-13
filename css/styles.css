@@ -1,0 +1,87 @@
+@import './fonts/Gotham-Font/style.css';
+.project_container, .header_cont {
+  width: 82%;
+  margin: 0 auto;
+}
+
+.project_container, .header_cont {
+  width: 82%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  padding: 53px 0;
+}
+
+.header_cont {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: flex-end;
+  -moz-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.header_auth a {
+  font-size: 36px;
+  font-family: "GothamBold";
+  color: #fff;
+  text-transform: uppercase;
+}
+.header_auth a:first-of-type {
+  margin-right: 40px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+::-webkit-input-placeholder {
+  color: #868686;
+  font-family: Arial, sans-serif;
+}
+
+:-ms-input-placeholder {
+  color: #868686;
+  font-family: Arial, sans-serif;
+}
+
+::placeholder {
+  color: #868686;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */

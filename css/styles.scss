@@ -1,0 +1,51 @@
+@import './fonts/Gotham-Font/style.css';
+@import './variables.scss';
+@import './global.scss';
+@import './header.scss';
+@import './media-queries.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        opacity: $link_opacity;
+    }
+}
+
+a, button {
+    cursor: $second_cursor;
+}
+
+input, 
+textarea,
+button {
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+::-webkit-input-placeholder { 
+    color: #868686;
+    font-family: Arial, sans-serif;
+}
+
+:-ms-input-placeholder {
+    color: #868686;
+    font-family: Arial, sans-serif;
+}
+
+::placeholder {
+    color: #868686;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,30 @@
+// @import './variables.scss';
+
+@mixin project_cont_mix($width, $margin: 0 auto) {
+    width: $width;
+    margin: $margin;
+}
+
+@mixin flex_mix {
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex;
+}
+
+@mixin flex_align_items_mix($to: center) {
+    -webkit-box-align: $to;
+    -moz-box-align: $to;
+    -ms-flex-align: $to;
+    -webkit-align-items: $to;
+    align-items: $to;
+}
+
+
+
+
+
+
+
+

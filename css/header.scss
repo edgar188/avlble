@@ -1,0 +1,26 @@
+@import './global.scss';
+@import './variables.scss';
+@import './mixins.scss';
+
+header {
+    background-color: $header_bg_color;
+    padding: $header_padding;
+}
+
+.header_cont {
+    @extend .project_container;
+    @include flex_mix;
+    @include flex_align_items_mix($to: flex-end);
+    justify-content: space-between;
+}
+
+.header_auth a {
+    font-size: $header_link_fontsize;
+    font-family: $header_link_fontfamily;
+    color: $header_link_color;
+    text-transform: uppercase;
+    &:first-of-type {
+        margin-right: 40px;
+    }
+}
+
