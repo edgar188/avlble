@@ -1,4 +1,4 @@
-// @import './variables.scss';
+@import './variables.scss';
 
 @mixin project_cont_mix($width, $margin: 0 auto) {
     width: $width;
@@ -21,7 +21,14 @@
     align-items: $to;
 }
 
-
+@mixin button_mixin($fontsize, $padding, $bc, $color, $border:none, $fontfamily: $gotham_medium) {
+    font-size: $fontsize;
+    font-family: $fontfamily;
+    padding: $padding;
+    background-color: $bc;
+    color: $color;
+    border: $border;
+}
 
 
 

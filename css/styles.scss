@@ -4,6 +4,7 @@
 @import './header.scss';
 @import './bar.scss';
 @import './media-queries.scss';
+@import './mixins.scss';
 
 * {
     padding: 0;
@@ -32,21 +33,7 @@ ul {
     list-style-type: none;
 }
 
-::-webkit-input-placeholder { 
-    color: #868686;
-    font-family: Arial, sans-serif;
-}
-
-:-ms-input-placeholder {
-    color: #868686;
-    font-family: Arial, sans-serif;
-}
-
-::placeholder {
-    color: #868686;
-    font-family: Arial, sans-serif;
-}
-
 main {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $gotham_medium, Arial, Helvetica, sans-serif;
 }
+

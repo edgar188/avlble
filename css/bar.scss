@@ -13,10 +13,52 @@
 
 .bar_form {
     @include flex_mix;
+    @include flex_align_items_mix;
 
     & > div {
         margin-right: 8px;
     }
-    
 
+    .bar_search_container {
+        width: 51%;
+        max-width: 1253px;
+
+        .bar_search {
+            width: 100%;
+            font-size: $bar_text_fontsize;
+            border: none;
+            text-indent: 20px;
+            padding: 22px 0;
+            color: $blue_color;
+            &::placeholder {
+                color: $blue_color;
+                text-transform: uppercase;
+                font-family: $gotham_medium;
+            }
+        }
+    }
+
+    .bar_date_container {
+        padding: 13px;
+        background-color: $bar_field_bg_color;
+        cursor: $second_cursor;
+
+        span {
+            font-size: $bar_text_fontsize;
+            color: $blue_color;
+            float: left;
+            margin-top: 12px;
+            margin-right: 20px;
+        }
+
+        i.icon-calendar {
+            font-size: 50px;
+            color: #929497;
+        }
+    }
+
+    .custom_btn {
+        @include button_mixin($bar_text_fontsize, 24px, $bar_field_bg_color, $blue_color);
+
+    }
 }

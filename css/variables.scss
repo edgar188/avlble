@@ -3,6 +3,12 @@ $cont_width: 82%;
 $link_opacity: 0.8;
 $second_cursor: pointer;
 
+// Blue color
+$blue_color: #3ba2d4;
+
+//Main Font-family
+$gotham_medium: 'GothamMedium', Arial, sans-serif;
+
 // ------------------------ Header ------------------------
 
 $header_bg_color: #333;
@@ -13,4 +19,6 @@ $header_link_fontfamily: 'GothamBold';
 
 // ---------------------- Bar ----------------------------
 $bar_bg_color: #77787a;
+$bar_field_bg_color: #fff;
 $bar_padding: 20px 0;
+$bar_text_fontsize: 25px;
