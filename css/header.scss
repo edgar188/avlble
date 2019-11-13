@@ -7,7 +7,7 @@ header {
     padding: $header_padding;
 }
 
-.header_cont {
+.header_container {
     @extend .project_container;
     @include flex_mix;
     @include flex_align_items_mix($to: flex-end);
@@ -19,6 +19,7 @@ header {
     font-family: $header_link_fontfamily;
     color: $header_link_color;
     text-transform: uppercase;
+
     &:first-of-type {
         margin-right: 40px;
     }

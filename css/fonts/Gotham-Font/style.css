@@ -5,3 +5,8 @@
     src:  url('Gotham-Bold.otf') format('opentype'),
         url('GothamBold.ttf') format('opentype');
 }
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('GothamMedium.ttf') format('opentype');
+}

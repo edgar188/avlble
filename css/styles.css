@@ -1,10 +1,10 @@
 @import './fonts/Gotham-Font/style.css';
-.project_container, .header_cont {
+.project_container, .bar_container, .header_container {
   width: 82%;
   margin: 0 auto;
 }
 
-.project_container, .header_cont {
+.project_container, .bar_container, .header_container {
   width: 82%;
   margin: 0 auto;
 }
@@ -14,7 +14,7 @@ header {
   padding: 53px 0;
 }
 
-.header_cont {
+.header_container {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -36,6 +36,27 @@ header {
 }
 .header_auth a:first-of-type {
   margin-right: 40px;
+}
+
+.project_container, .bar_container, .header_container {
+  width: 82%;
+  margin: 0 auto;
+}
+
+.bar {
+  background-color: #77787a;
+  padding: 20px 0;
+}
+
+.bar_form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.bar_form > div {
+  margin-right: 8px;
 }
 
 * {
