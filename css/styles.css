@@ -205,6 +205,8 @@ header {
 .roll_over i {
   color: #fff;
   font-size: 24px;
+  float: left;
+  margin-right: 10px;
 }
 .roll_over .flex_1 {
   display: flex;
