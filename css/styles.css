@@ -1,3 +1,4 @@
+@import './fonts/font-icons/style.css';
 @import './fonts/Gotham-Font/style.css';
 .project_container, .portfolio_container, .bar_container, .header_container {
   width: 82%;
@@ -147,6 +148,15 @@ header {
   justify-content: space-between;
 }
 
+.head_container {
+  margin-bottom: 60px;
+}
+.head_container h2 {
+  font-size: 50px;
+  font-family: "GothamMedium";
+  color: #333;
+}
+
 .portfolio_item {
   max-width: 585px;
   width: 100%;
@@ -171,6 +181,7 @@ header {
 .portfolio_title {
   font-size: 33px;
   margin: 47px 0 20px;
+  color: #333;
 }
 
 .portfolio_desc {
@@ -179,6 +190,35 @@ header {
   line-height: 33px;
   vertical-align: 40px;
   color: #666;
+}
+
+.roll_over {
+  background-color: #333;
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  opacity: 1;
+  transition: opacity 0.5s;
+  color: #fff;
+}
+.roll_over i {
+  color: #fff;
+  font-size: 24px;
+}
+.roll_over .flex_1 {
+  display: flex;
+  justify-content: space-between;
+}
+.roll_over .flex_2 {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.roll_over .flex_2 .flex_2_text {
+  max-width: 60%;
+  max-height: 38px;
+  overflow: hidden;
 }
 
 * {
