@@ -144,13 +144,41 @@ header {
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
-  height: 300px;
+  justify-content: space-between;
 }
 
 .portfolio_item {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  max-width: 585px;
+  width: 100%;
+  margin-bottom: 140px;
+  margin-right: 20px;
+}
+
+.portfolio_item_pict_cont {
+  position: relative;
+}
+
+.portfolio_picture {
+  width: 100%;
+}
+
+.portfolio_title, .portfolio_desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.portfolio_title {
+  font-size: 33px;
+  margin: 47px 0 20px;
+}
+
+.portfolio_desc {
+  font-size: 30px;
+  font-family: "GothamBook", "GothamMedium", sans-serif;
+  line-height: 33px;
+  vertical-align: 40px;
+  color: #666;
 }
 
 * {
