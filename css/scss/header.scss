@@ -16,12 +16,12 @@ header {
 
 .header_auth a {
     font-size: $header_link_fontsize;
-    font-family: $header_link_fontfamily;
+    font-family: $gotham_bold;
     color: $header_link_color;
     text-transform: uppercase;
 
     &:first-of-type {
-        margin-right: 40px;
+        margin-right: $header_first_link_marginright;
     }
 }
 

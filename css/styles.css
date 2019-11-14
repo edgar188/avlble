@@ -1,5 +1,5 @@
 @import './fonts/Gotham-Font/style.css';
-.project_container, .bar_container, .header_container {
+.project_container, .portfolio_container, .bar_container, .header_container {
   width: 82%;
   margin: 0 auto;
 }
@@ -30,7 +30,7 @@ header {
 
 .header_auth a {
   font-size: 36px;
-  font-family: "GothamBold";
+  font-family: "GothamBold", Arial, sans-serif;
   color: #fff;
   text-transform: uppercase;
 }
@@ -38,7 +38,7 @@ header {
   margin-right: 40px;
 }
 
-.project_container, .bar_container, .header_container {
+.project_container, .portfolio_container, .bar_container, .header_container {
   width: 82%;
   margin: 0 auto;
 }
@@ -73,7 +73,7 @@ header {
   font-size: 25px;
   border: none;
   text-indent: 20px;
-  padding: 22px 0;
+  padding: 20px 0;
   color: #3ba2d4;
 }
 .bar_form .bar_search_container .bar_search::placeholder {
@@ -82,16 +82,15 @@ header {
   font-family: "GothamMedium", Arial, sans-serif;
 }
 .bar_form .bar_date_container {
-  padding: 13px;
+  padding: 10px;
   background-color: #fff;
   cursor: pointer;
 }
-.bar_form .bar_date_container span {
+.bar_form .bar_date_container .bar_date_text {
+  float: left;
   font-size: 25px;
   color: #3ba2d4;
-  float: left;
-  margin-top: 12px;
-  margin-right: 20px;
+  margin: 12px 20px 0 0;
 }
 .bar_form .bar_date_container i.icon-calendar {
   font-size: 50px;
@@ -100,7 +99,7 @@ header {
 .bar_form .custom_btn {
   font-size: 25px;
   font-family: "GothamMedium", Arial, sans-serif;
-  padding: 24px;
+  padding: 21px;
   background-color: #fff;
   color: #3ba2d4;
   border: none;
@@ -134,6 +133,24 @@ header {
 .owl-theme .owl-dots .owl-dot span {
   width: 15px;
   height: 15px;
+}
+
+.portfolio {
+  background-color: #fff;
+  padding-top: 150px;
+}
+
+.portfolio_items_container {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+}
+
+.portfolio_item {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 * {

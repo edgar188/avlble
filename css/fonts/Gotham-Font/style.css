@@ -1,12 +1,18 @@
 /* ---------------------- Gotham -------------------------- */
-
+/* Bold */
 @font-face {
     font-family: 'GothamBold';
     src:  url('Gotham-Bold.otf') format('opentype'),
         url('GothamBold.ttf') format('opentype');
 }
-
+/* Medium */
 @font-face {
     font-family: 'GothamMedium';
     src: url('GothamMedium.ttf') format('opentype');
 }
+/* Book */
+@font-face {
+    font-family: 'GothamBook';
+    src: url('GothamBook.ttf') format('opentype');
+}
+

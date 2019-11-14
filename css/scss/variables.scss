@@ -12,19 +12,26 @@ $gotham_bold: 'GothamBold', Arial, sans-serif;
 $half_width: 50%;
 $half_max_width: 1250px;
 
-
 // ------------------------ Header ------------------------
 $header_bg_color: #333;
 $header_padding: 53px 0;
 $header_link_fontsize: 36px;
 $header_link_color: #fff;
-$header_link_fontfamily: 'GothamBold';
+$header_first_link_marginright: 40px;
 
 // ---------------------- Bar ----------------------------
 $bar_bg_color: #77787a;
+$bar_form_div_marginright: 8px;
 $bar_field_bg_color: #fff;
 $bar_padding: 20px 0;
 $bar_text_fontsize: 25px;
+$bar_search_width: 100%;
+$bar_search_textindent: 20px;
+$bar_search_padding: 20px 0;
+$bar_date_container_padding: 10px;
+$bar_date_text_margin: 12px 20px 0 0;
+$bar_icon_fontsize: 50px;
+$bar_icon_color: #929497;
 
 // ---------------------- Slider --------------------------
 $slider_bg_color: #9FA2A9;
@@ -35,8 +42,9 @@ $slider_text_container_marginleft: 9%;
 $slider_text_fontsize: 62px;
 $slider_text_color: #fff;
 
+// ---------------------- Portfolio ------------------------
 
-
-
+$portfolio_bg_color: #fff;
+$portfolio_paddingtop: 150px; 
 
 

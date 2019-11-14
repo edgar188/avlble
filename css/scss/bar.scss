@@ -16,18 +16,18 @@
     @include flex_align_items_mix;
 
     & > div {
-        margin-right: 8px;
+        margin-right: $bar_form_div_marginright;
     }
 
     .bar_search_container {
         @extend .project_half_container;
 
         .bar_search {
-            width: 100%;
+            width: $bar_search_width;
             font-size: $bar_text_fontsize;
             border: none;
-            text-indent: 20px;
-            padding: 22px 0;
+            text-indent: $bar_search_textindent;
+            padding: $bar_search_padding;
             color: $blue_color;
             &::placeholder {
                 color: $blue_color;
@@ -38,26 +38,22 @@
     }
 
     .bar_date_container {
-        padding: 13px;
+        padding: $bar_date_container_padding;
         background-color: $bar_field_bg_color;
         cursor: $second_cursor;
-
-        span {
+        .bar_date_text {
+            float: left;
             font-size: $bar_text_fontsize;
             color: $blue_color;
-            float: left;
-            margin-top: 12px;
-            margin-right: 20px;
+            margin: $bar_date_text_margin;
         }
-
         i.icon-calendar {
-            font-size: 50px;
-            color: #929497;
+            font-size: $bar_icon_fontsize;
+            color: $bar_icon_color;
         }
     }
 
     .custom_btn {
-        @include button_mixin($bar_text_fontsize, 24px, $bar_field_bg_color, $blue_color);
-
+        @include button_mixin($bar_text_fontsize, 21px, $bar_field_bg_color, $blue_color);
     }
 }
