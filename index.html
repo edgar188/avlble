@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <link href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" rel="stylesheet" type="text/css">
     <link href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" rel="stylesheet" type="text/css">
-
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/4eedbb8046/avlble-font-icons/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <script src="./OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js" type="text/javascript"></script>
+    <script async defer src="./OwlCarousel2-2.3.4/dist/owl.carousel.js" type="text/javascript"></script>
+    <script async defer src="./js/script.js"></script>
     <title>Avlble</title>
 </head>
 
@@ -48,60 +50,32 @@
                 </form>
             </div>
         </section>
-
         <section class="slider">
             <div id="owl-demo" class="owl-carousel owl-theme">
-                <div class="item" style="background-image: url(./images/slider/CbVbCs.jpg);height: 1000px;">
-                    <div style="max-width: 80%;margin: 0 auto;">
-                       <h2 style="max-width: 51%;font-size: 62px;">
-                            FIND, CONNECT, BOOK AND MANAGE  FREELANCE CREATIVE TALENT
-                       </h2>
+                <div class="item">
+                    <div class="slider_text_container">
+                        <p class="slider_text">
+                            Find, connect, book and manage freelance creative talent
+                        </p>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(./images/slider/CbVbCs.jpg);height: 1000px;">
-                    <div style="max-width: 80%;margin: 0 auto;">
-                       <h2 style="max-width: 51%;font-size: 62px;">
-                            FIND, CONNECT, BOOK AND MANAGE  FREELANCE CREATIVE TALENT
-                       </h2>
+                <div class="item">
+                    <div class="slider_text_container">
+                        <p class="slider_text">
+                            Find, connect, book and manage freelance creative talent
+                        </p>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(./images/slider/CbVbCs.jpg);height: 1000px;background-size: cover;">
-                    <div style="max-width: 80%;margin: 0 auto;">
-                       <h2 style="max-width: 51%;font-size: 62px;">
-                            FIND, CONNECT, BOOK AND MANAGE  FREELANCE CREATIVE TALENT
-                       </h2>
+                <div class="item">
+                    <div class="slider_text_container">
+                        <p class="slider_text">
+                            Find, connect, book and manage freelance creative talent
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
-    <script src="./OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js" type="text/javascript"></script>
-    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.js" type="text/javascript"></script>
-    <script>
-        // http://www.landmarkmlp.com/js-plugin/owl.carousel/demos/one.html
-        //https://icomoon.io/app/#/select/font
-        //https://freefontsfamily.com/gotham-font-family/
-        $(document).ready(function () {
-
-            $("#owl-demo").owlCarousel({
-
-                navigation: true, // Show next and prev buttons
-                slideSpeed: 300,
-                paginationSpeed: 400,
-                singleItem: true,
-
-                // "singleItem:true" is a shortcut for:
-                items : 1, 
-                itemsDesktop : false,
-                itemsDesktopSmall : false,
-                itemsTablet: false,
-                itemsMobile : false
-
-            });
-
-        });
-    </script>
 </body>
 
 </html>

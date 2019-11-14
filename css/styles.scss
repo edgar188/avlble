@@ -1,10 +1,11 @@
 @import './fonts/Gotham-Font/style.css';
-@import './variables.scss';
-@import './global.scss';
-@import './header.scss';
-@import './bar.scss';
-@import './media-queries.scss';
-@import './mixins.scss';
+@import './scss/variables.scss';
+@import './scss/mixins.scss';
+@import './scss/global.scss';
+@import './scss/header.scss';
+@import './scss/bar.scss';
+@import './scss/slider.scss';
+@import './scss/media-queries.scss';
 
 * {
     padding: 0;

@@ -1,9 +1,13 @@
-@import './variables.scss';
-
 @mixin project_cont_mix($width, $margin: 0 auto) {
     width: $width;
     margin: $margin;
 }
+
+@mixin project_width($width, $max_width) {
+    width: $width;
+    max-width: $max_width;
+}
+
 
 @mixin flex_mix {
     display: -webkit-box; 

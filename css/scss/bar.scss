@@ -20,8 +20,7 @@
     }
 
     .bar_search_container {
-        width: 51%;
-        max-width: 1253px;
+        @extend .project_half_container;
 
         .bar_search {
             width: 100%;

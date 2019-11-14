@@ -2,15 +2,18 @@
 $cont_width: 82%;
 $link_opacity: 0.8;
 $second_cursor: pointer;
-
 // Blue color
 $blue_color: #3ba2d4;
-
 //Main Font-family
 $gotham_medium: 'GothamMedium', Arial, sans-serif;
+$gotham_bold: 'GothamBold', Arial, sans-serif;
+
+// Project half container
+$half_width: 50%;
+$half_max_width: 1250px;
+
 
 // ------------------------ Header ------------------------
-
 $header_bg_color: #333;
 $header_padding: 53px 0;
 $header_link_fontsize: 36px;
@@ -22,3 +25,18 @@ $bar_bg_color: #77787a;
 $bar_field_bg_color: #fff;
 $bar_padding: 20px 0;
 $bar_text_fontsize: 25px;
+
+// ---------------------- Slider --------------------------
+$slider_bg_color: #9FA2A9;
+$slider_padding_top: 90px;
+$slider_item_height: 950px;
+$slider_text_container_maxheight: 480px;
+$slider_text_container_marginleft: 9%;
+$slider_text_fontsize: 62px;
+$slider_text_color: #fff;
+
+
+
+
+
+
