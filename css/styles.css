@@ -216,19 +216,22 @@ header {
   color: #3ba2d4;
   cursor: pointer;
 }
-.roll_over .flex_1 {
+.roll_over .top_content {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
-.roll_over .flex_2 {
+.roll_over .top_content > div {
+  display: flex;
+}
+.roll_over .bottom_content {
   margin-top: 40px;
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-.roll_over .flex_2 .flex_2_text {
+.roll_over .bottom_content .bottom_content_text {
   max-width: 60%;
   max-height: 38px;
   overflow: hidden;

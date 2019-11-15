@@ -85,20 +85,24 @@
         }
     }
 
-    .flex_1 {
+    .top_content {
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
+
+        & > div {
+            display: flex;
+        }
     }
 
-    .flex_2 {
+    .bottom_content {
         margin-top: 40px;
         margin-bottom: 30px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
 
-        .flex_2_text {
+        .bottom_content_text {
             max-width: 60%;
             max-height: 38px;
             overflow: hidden;
