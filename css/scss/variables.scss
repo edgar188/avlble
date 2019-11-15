@@ -1,6 +1,6 @@
 // Project container width 
 $cont_width: 82%;
-$link_opacity: 0.8;
+$link_opacity: 0.5;
 $second_cursor: pointer;
 // Blue color
 $blue_color: #3ba2d4;
@@ -46,6 +46,7 @@ $slider_item_height: 950px;
 $slider_text_container_maxheight: 480px;
 $slider_text_container_marginleft: 9%;
 $slider_text_fontsize: 62px;
+$slider_text_fontsize2: 40px;
 $slider_text_color: #fff;
 
 // ---------------------- Portfolio ------------------------
@@ -74,6 +75,12 @@ $subscribe_margin_top: 90px;
 $subscribe_padding: 25px 0;
 $subscribe_content_fontsize: 67px;
 
-
-
-
+// ----------------------- Footer ---------------------------
+$footer_bg_color: #fff;
+$footer_margin: 100px 0 180px;
+$footer_column_maxwidth: 25%;
+$footer_content_width: 75%;
+$footer_content_maxwidth: 1560px;
+$footer_content_fontsize: 30px;
+$footer_content_lineheight: 62px;
+$footer_link_color: #333;

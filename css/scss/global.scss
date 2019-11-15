@@ -1,6 +1,3 @@
-@import './variables.scss';
-@import './mixins.scss';
-
 .project_container {
     @include project_cont_mix($width: $cont_width);
 }
