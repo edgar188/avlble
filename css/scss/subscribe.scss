@@ -5,15 +5,14 @@
 .subscribe {
     background-color: $subscribe_bg_color;
     margin-top: $subscribe_margin_top;
-    margin-bottom: 100px;
-    padding: 25px 0;
+    padding: $subscribe_padding;
 }
 
 .subscribe_container {
     @extend .project_container;
 }
 .subscribe_content {
-    font-size: 65px;
+    font-size: $subscribe_content_fontsize;
     .subscribe_content_link {
         color: $blue_color;
         margin-right: 30px;

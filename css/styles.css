@@ -342,16 +342,46 @@ header {
 .subscribe {
   background-color: #333;
   margin-top: 90px;
-  margin-bottom: 100px;
   padding: 25px 0;
 }
 
 .subscribe_content {
-  font-size: 65px;
+  font-size: 67px;
 }
 .subscribe_content .subscribe_content_link {
   color: #3ba2d4;
   margin-right: 30px;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #fff;
+  margin-bottom: 180px;
+}
+footer .footer_container {
+  max-width: 82%;
+  margin: 0 auto;
+}
+footer .footer_content {
+  width: 75%;
+  max-width: 1560px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 30px;
+  line-height: 62px;
+}
+footer .footer_content > div {
+  max-width: 25%;
+}
+footer .footer_content p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
+footer .footer_content a {
+  color: #333;
 }
 
 * {
