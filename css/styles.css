@@ -1,6 +1,6 @@
 @import './fonts/font-icons/style.css';
 @import './fonts/Gotham-Font/style.css';
-.project_container, .portfolio_container, .bar_container, .header_container {
+.project_container, .subscribe_container, .portfolio_container, .bar_container, .header_container {
   width: 82%;
   max-width: 100%;
   margin: 0 auto;
@@ -55,7 +55,7 @@ header {
   margin-right: 40px;
 }
 
-.project_container, .portfolio_container, .bar_container, .header_container {
+.project_container, .subscribe_container, .portfolio_container, .bar_container, .header_container {
   width: 82%;
   max-width: 100%;
   margin: 0 auto;
@@ -168,7 +168,7 @@ header {
   height: 15px;
 }
 
-.project_container, .portfolio_container, .header_container, .bar_container {
+.project_container, .subscribe_container, .portfolio_container, .header_container, .bar_container {
   width: 82%;
   max-width: 100%;
   margin: 0 auto;
@@ -311,6 +311,47 @@ header {
 }
 .roll_over .follow_container .follow_text {
   font-size: portfolio_follow_text_fontsize;
+}
+
+.project_container, .subscribe_container, .header_container, .bar_container, .portfolio_container {
+  width: 82%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.project_half_container, .bar_form .bar_search_container, .slider .slider_text_container {
+  width: 50%;
+  max-width: 1250px;
+}
+
+.ellipsis, .portfolio_title, .portfolio_desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project_head_container, .head_container {
+  margin-bottom: 60px;
+}
+.project_head_container h2, .head_container h2 {
+  font-size: 50px;
+  font-family: "GothamMedium", sans-serif;
+  color: head_color;
+}
+
+.subscribe {
+  background-color: #333;
+  margin-top: 90px;
+  margin-bottom: 100px;
+  padding: 25px 0;
+}
+
+.subscribe_content {
+  font-size: 65px;
+}
+.subscribe_content .subscribe_content_link {
+  color: #3ba2d4;
+  margin-right: 30px;
 }
 
 * {
