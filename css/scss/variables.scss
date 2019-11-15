@@ -5,12 +5,18 @@ $second_cursor: pointer;
 // Blue color
 $blue_color: #3ba2d4;
 //Main Font-family
-$gotham_medium: 'GothamMedium', Arial, sans-serif;
-$gotham_bold: 'GothamBold', Arial, sans-serif;
+$gotham_medium: 'GothamMedium', sans-serif;
+$gotham_bold: 'GothamBold', 'GothamMedium', sans-serif;
+$gotham_book: 'GothamBook', 'GothamMedium', sans-serif;
 
 // Project half container
 $half_width: 50%;
 $half_max_width: 1250px;
+
+// Project head 
+$project_head_container_margin_bottom: 60px;
+$head_color: #333;
+$head_fontsize: 50px;
 
 // ------------------------ Header ------------------------
 $header_bg_color: #333;
@@ -43,8 +49,23 @@ $slider_text_fontsize: 62px;
 $slider_text_color: #fff;
 
 // ---------------------- Portfolio ------------------------
-
 $portfolio_bg_color: #fff;
 $portfolio_paddingtop: 150px; 
+$portfolio_transition_time: 0.5s;
+$portfolio_item_width: 100%;
+$portfolio_item_maxwidth: 585px;
+$portfolio_picture_maxheight: 313px;
+$portfolio_title_fontsize: 33px;
+$portfolio_title_color: #333;
+$portfolio_desc_fontsize: 30px;
+$portfolio_desc_lineheight: 33px;
+$portfolio_desc_color: #666;
+$portfolio_roll_over_bg_color: #333;
+$portfolio_roll_over_color: #fff;
+$portfolio_roll_over_fontsize: 17px;
+$portfolio_follow_icon_fontsize: 24px;
+$portfolio_follow_text_fontsize: 20px;
+$portfolio_bottom_context_text_maxwidth: 60%;
+$portfolio_bottom_context_text_maxheight: 38px;
 
 

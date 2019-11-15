@@ -2,12 +2,28 @@
 @import './fonts/Gotham-Font/style.css';
 .project_container, .portfolio_container, .bar_container, .header_container {
   width: 82%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .project_half_container, .slider .slider_text_container, .bar_form .bar_search_container {
   width: 50%;
   max-width: 1250px;
+}
+
+.ellipsis, .portfolio_title, .portfolio_desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project_head_container, .head_container {
+  margin-bottom: 60px;
+}
+.project_head_container h2, .head_container h2 {
+  font-size: 50px;
+  font-family: "GothamMedium", sans-serif;
+  color: head_color;
 }
 
 header {
@@ -31,7 +47,7 @@ header {
 
 .header_auth a {
   font-size: 36px;
-  font-family: "GothamBold", Arial, sans-serif;
+  font-family: "GothamBold", "GothamMedium", sans-serif;
   color: #fff;
   text-transform: uppercase;
 }
@@ -41,12 +57,28 @@ header {
 
 .project_container, .portfolio_container, .bar_container, .header_container {
   width: 82%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .project_half_container, .slider .slider_text_container, .bar_form .bar_search_container {
   width: 50%;
   max-width: 1250px;
+}
+
+.ellipsis, .portfolio_title, .portfolio_desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project_head_container, .head_container {
+  margin-bottom: 60px;
+}
+.project_head_container h2, .head_container h2 {
+  font-size: 50px;
+  font-family: "GothamMedium", sans-serif;
+  color: head_color;
 }
 
 .bar {
@@ -80,7 +112,7 @@ header {
 .bar_form .bar_search_container .bar_search::placeholder {
   color: #3ba2d4;
   text-transform: uppercase;
-  font-family: "GothamMedium", Arial, sans-serif;
+  font-family: "GothamMedium", sans-serif;
 }
 .bar_form .bar_date_container {
   padding: 10px;
@@ -99,7 +131,7 @@ header {
 }
 .bar_form .custom_btn {
   font-size: 25px;
-  font-family: "GothamMedium", Arial, sans-serif;
+  font-family: "GothamMedium", sans-serif;
   padding: 21px;
   background-color: #fff;
   color: #3ba2d4;
@@ -136,30 +168,52 @@ header {
   height: 15px;
 }
 
+.project_container, .portfolio_container, .header_container, .bar_container {
+  width: 82%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.project_half_container, .bar_form .bar_search_container, .slider .slider_text_container {
+  width: 50%;
+  max-width: 1250px;
+}
+
+.ellipsis, .portfolio_title, .portfolio_desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project_head_container, .head_container {
+  margin-bottom: 60px;
+}
+.project_head_container h2, .head_container h2 {
+  font-size: 50px;
+  font-family: "GothamMedium", sans-serif;
+  color: head_color;
+}
+
 .portfolio {
   background-color: #fff;
   padding-top: 150px;
 }
 
 .portfolio_items_container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.head_container {
-  margin-bottom: 60px;
-}
-.head_container h2 {
-  font-size: 50px;
-  font-family: "GothamMedium";
-  color: #333;
-}
-
 .portfolio_item {
-  max-width: 585px;
   width: 100%;
+  max-width: 585px;
   margin-bottom: 140px;
   margin-right: 20px;
 }
@@ -174,23 +228,17 @@ header {
   max-height: 313px;
 }
 
-.portfolio_title, .portfolio_desc {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .portfolio_title {
+  text-transform: uppercase;
   font-size: 33px;
-  margin: 47px 0 20px;
   color: #333;
+  margin: 47px 0 20px;
 }
 
 .portfolio_desc {
   font-size: 30px;
   font-family: "GothamBook", "GothamMedium", sans-serif;
   line-height: 33px;
-  vertical-align: 40px;
   color: #666;
 }
 
@@ -200,16 +248,16 @@ header {
   width: 100%;
   bottom: 0;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: 0.5s;
   color: #fff;
   font-size: 17px;
 }
 .roll_over .roll_content_container {
+  width: 100%;
   max-width: 90%;
   margin: 0 auto;
 }
 .roll_over i {
-  color: #fff;
   float: left;
 }
 .roll_over i:hover {
@@ -217,19 +265,35 @@ header {
   cursor: pointer;
 }
 .roll_over .top_content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 .roll_over .top_content > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .roll_over .bottom_content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: flex-end;
+  -moz-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  justify-content: space-between;
   margin-top: 40px;
   margin-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 .roll_over .bottom_content .bottom_content_text {
   max-width: 60%;
@@ -246,7 +310,7 @@ header {
   font-size: 24px;
 }
 .roll_over .follow_container .follow_text {
-  font-size: 20px;
+  font-size: portfolio_follow_text_fontsize;
 }
 
 * {
@@ -277,7 +341,7 @@ ul {
 }
 
 main {
-  font-family: "GothamMedium", Arial, sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "GothamMedium", sans-serif, Arial, Helvetica, sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

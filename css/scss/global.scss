@@ -9,6 +9,22 @@
    @include project_width($width: $half_width, $max_width: $half_max_width);
 }
 
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project_head_container {
+    margin-bottom: $project_head_container_margin_bottom;
+
+    h2 {
+        font-size: $head_fontsize;
+        font-family: $gotham_medium;
+        color: head_color;
+    }
+}
+
 
 
 

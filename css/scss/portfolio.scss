@@ -1,3 +1,6 @@
+@import "./variables.scss";
+@import "./global.scss";
+
 .portfolio {
     background-color: $portfolio_bg_color;
     padding-top: $portfolio_paddingtop;
@@ -8,24 +11,17 @@
 }
 
 .portfolio_items_container {
-    display:-webkit-flex;
-    display:flex;
-    flex-wrap: wrap;
+    @include flex_mix;
+    @include flex_wrap_mix($wrap: wrap);
     justify-content: space-between;
 }
 
 .head_container {
-    margin-bottom: 60px;
-    h2 {
-        font-size: 50px;
-        font-family: "GothamMedium";
-        color: #333;
-    }
+    @extend .project_head_container;
 }
 
 .portfolio_item {
-    max-width: 585px;
-    width: 100%;
+    @include project_width($portfolio_item_width, $portfolio_item_maxwidth);
     margin-bottom: 140px;
     margin-right: 20px;
 }
@@ -35,76 +31,71 @@
 }
 
 .portfolio_picture {
-    width: 100%;
-    max-width: 585px;
-    max-height: 313px;
+    @include project_width($portfolio_item_width, $portfolio_item_maxwidth);
+    max-height: $portfolio_picture_maxheight;
 }
 
 .portfolio_title, .portfolio_desc {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+   @extend .ellipsis;
 }
 
 .portfolio_title {
-    font-size: 33px;
+    text-transform: uppercase;
+    font-size: $portfolio_title_fontsize;
+    color: $portfolio_title_color;
     margin: 47px 0 20px;
-    color: #333;
 }
 
 .portfolio_desc {
-    font-size: 30px;
-    font-family: "GothamBook", "GothamMedium", sans-serif;
-    line-height: 33px;
-    vertical-align: 40px;
-    color: #666;
+    font-size: $portfolio_desc_fontsize;
+    font-family: $gotham_book;
+    line-height: $portfolio_desc_lineheight;
+    color: $portfolio_desc_color;
 }
 
 .roll_over {
-    background-color: #333;
+    background-color: $portfolio_roll_over_bg_color;
     position: absolute;
     width: 100%;
     bottom: 0;
     opacity: 0;  
-    transition: opacity 0.5s;
-    color: #fff;
-    font-size: 17px;
+    transition: $portfolio_transition_time;
+    color: $portfolio_roll_over_color;
+    font-size: $portfolio_roll_over_fontsize;
 
     .roll_content_container {
-        max-width: 90%;
-        margin: 0 auto;
+        @include project_cont_mix(100%, 90%);
     }
 
     i {
-        color: #fff;
         float: left;
 
         &:hover {
-            color: #3ba2d4;
-            cursor: pointer;
+            color: $blue_color;
+            cursor: $second_cursor;
         }
     }
 
     .top_content {
-        display: flex;
+        @include flex_mix;
         justify-content: space-between;
         margin-top: 10px;
 
         & > div {
-            display: flex;
+            @include flex_mix;
         }
     }
 
     .bottom_content {
+        @include flex_mix;
+        @include flex_align_items_mix($to: flex-end);
+        justify-content: space-between;
         margin-top: 40px;
         margin-bottom: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-
+        
         .bottom_content_text {
-            max-width: 60%;
-            max-height: 38px;
+            max-width: $portfolio_bottom_context_text_maxwidth;
+            max-height: $portfolio_bottom_context_text_maxheight;
             overflow: hidden;
         }
     }
@@ -117,11 +108,11 @@
         margin-right: 5px;
 
         i.icon-add.follow {
-            font-size: 24px;
+            font-size: $portfolio_follow_icon_fontsize;
         }
 
         .follow_text {
-            font-size: 20px;
+            font-size: portfolio_follow_text_fontsize;
         }
     }
 }

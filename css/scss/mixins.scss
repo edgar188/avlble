@@ -1,11 +1,21 @@
-@mixin project_cont_mix($width, $margin: 0 auto) {
+@mixin project_cont_mix($width, $max_width: 100%, $margin: 0 auto) {
     width: $width;
+    max-width: $max_width;
     margin: $margin;
 }
 
 @mixin project_width($width, $max_width) {
     width: $width;
     max-width: $max_width;
+}
+
+@mixin button_mixin($fontsize, $padding, $bc, $color, $border:none, $fontfamily: $gotham_medium) {
+    font-size: $fontsize;
+    font-family: $fontfamily;
+    padding: $padding;
+    background-color: $bc;
+    color: $color;
+    border: $border;
 }
 
 @mixin flex_mix {
@@ -24,15 +34,11 @@
     align-items: $to;
 }
 
-@mixin button_mixin($fontsize, $padding, $bc, $color, $border:none, $fontfamily: $gotham_medium) {
-    font-size: $fontsize;
-    font-family: $fontfamily;
-    padding: $padding;
-    background-color: $bc;
-    color: $color;
-    border: $border;
+@mixin flex_wrap_mix($wrap: nowrap) {
+    display: -webkit-flex;
+    -webkit-flex-wrap: $wrap; 
+    flex-wrap: $wrap;
 }
-
 
 
 
