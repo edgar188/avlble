@@ -18,7 +18,7 @@
 
 <body>
     <main>
-        <!--------------------------- Header ----------------------------------->
+        <!------------------------------- Header --------------------------------------->
         <header>
             <div class="header_container">
                 <div>
@@ -32,7 +32,7 @@
                 </div>
             </div>
         </header>
-        <!------------------------------- Bar ----------------------------------->
+        <!---------------------------------- Bar --------------------------------------->
         <section class="bar">
             <div class="bar_container">
                 <form class="bar_form">
@@ -53,7 +53,7 @@
                 </form>
             </div>
         </section>
-        <!------------------------------ Slider --------------------------------->
+        <!--------------------------------- Slider -------------------------------------->
         <section class="slider">
             <div id="owl-demo" class="owl-carousel owl-theme">
                 <div class="item">
@@ -79,43 +79,45 @@
                 </div>
             </div>
         </section>
-        <!---------------------------- Portfolio -------------------------------->
+        <!------------------------------- Portfolio ------------------------------------->
         <section class="portfolio">
             <div class="portfolio_container">
                 <div class="head_container">
                     <h2>Featured portfolios</h2>
                 </div>
-                <div class="portfolio_items_container">
 
+                <div class="portfolio_items_container">
                     <div class="portfolio_item">
-                        <div class="portfolio_item_pict_cont">
-                          
-                            <img class="portfolio_picture" src="./images/portfolio/_Clip Group_1.jpg" alt="_Clip Group_1" />
-                            <div class="roll_over" id="roll">
-                                <div style="max-width: 90%;margin: 0 auto;">
+                        <div class="portfolio_item_pict_cont" 
+                            onmouseover="onRollHandler(true, this)"
+                            onmouseout="onRollHandler(false, this)">
+                            <img class="portfolio_picture" src="./images/portfolio/_Clip Group_1.jpg"
+                                alt="_Clip Group_1" />
+                            <div class="roll_over">
+                                <div class="roll_content_container">
                                     <div class="flex_1">
                                         <div style="display: flex;">
                                             <div>
                                                 <i class="icon-message"></i>
-                                                <span>35</span>
+                                                <span class="roll_count">35</span>
                                             </div>
                                             <div>
                                                 <i class="icon-heart"></i>
-                                                <span>498</span>
+                                                <span class="roll_count">498</span>
                                             </div>
                                             <div>
                                                 <i class="icon-eye"></i>
-                                                <span>800</span>
+                                                <span class="roll_count">800</span>
                                             </div>
                                         </div>
                                         <div style="display: flex;">
                                             <div>
                                                 <i class="icon-like"></i>
-                                                <span>10</span>
+                                                <span class="roll_count">10</span>
                                             </div>
                                             <div>
                                                 <i class="icon-star"></i>
-                                                <span>80</span>
+                                                <span class="roll_count">80</span>
                                             </div>
                                         </div>
                                     </div>
@@ -125,129 +127,382 @@
                                                 tempor
                                             </p>
                                         </div>
-                                        <div>
-                                            <span><i class="icon-add"></i></span>
-                                            <span>Follow</span>
+                                        <div class="follow_container">
+                                            <span><i class="icon-add follow"></i></span>
+                                            <span class="roll_count follow_text">Follow</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                          
                         </div>
                         <h3 class="portfolio_title">DANIELLA PIEZOWA</h3>
                         <p class="portfolio_desc">Motion Graphics Designer </p>
                     </div>
+
                     <div class="portfolio_item">
-                        <div class="portfolio_item_pict_cont">
+                        <div class="portfolio_item_pict_cont" 
+                            onmouseover="onRollHandler(true,this)"
+                            onmouseout="onRollHandler(false,this)">
                             <img class="portfolio_picture" src="./images/portfolio/_Clip Group_2.jpg"
                                 alt="_Clip Group_2" />
-                            <div class="roll_over" id="roll">
-
-                                <div class="flex_1">
-                                    <div style="display: flex;">
-                                        <div>
-                                            <i class="icon-message"></i>
-                                            <span>35</span>
+                            <div class="roll_over">
+                                <div style="max-width: 90%;margin: 0 auto;">
+                                    <div class="flex_1">
+                                        <div style="display: flex;">
+                                            <div>
+                                                <i class="icon-message"></i>
+                                                <span class="roll_count">35</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-heart"></i>
+                                                <span class="roll_count">498</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-eye"></i>
+                                                <span class="roll_count">800</span>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <i class="icon-heart"></i>
-                                            <span>498</span>
-                                        </div>
-                                        <div>
-                                            <i class="icon-eye"></i>
-                                            <span>800</span>
+                                        <div style="display: flex;">
+                                            <div>
+                                                <i class="icon-like"></i>
+                                                <span class="roll_count">10</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-star"></i>
+                                                <span class="roll_count">80</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div style="display: flex;">
-                                        <div>
-                                            <i class="icon-like"></i>
-                                            <span>10</span>
+                                    <div class="flex_2">
+                                        <div class="flex_2_text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor
+                                            </p>
                                         </div>
-                                        <div>
-                                            <i class="icon-star"></i>
-                                            <span>80</span>
+                                        <div class="follow_container">
+                                            <span><i class="icon-add follow"></i></span>
+                                            <span class="roll_count follow_text">Follow</span>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="flex_2">
-                                    <div class="flex_2_text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <span><i class="icon-add"></i></span>
-                                        <span>Follow</span>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                         <h3 class="portfolio_title">DANIELLA PIEZOWA</h3>
                         <p class="portfolio_desc">Motion Graphics Designer </p>
                     </div>
+
                     <div class="portfolio_item">
-                        <div class="portfolio_item_pict_cont">
+                        <div class="portfolio_item_pict_cont" 
+                            onmouseover="onRollHandler(true, this)"
+                            onmouseout="onRollHandler(false, this)">
                             <img class="portfolio_picture" src="./images/portfolio/_Clip Group_3.jpg"
                                 alt="_Clip Group_3" />
                             <div class="roll_over">
-
+                                <div style="max-width: 90%;margin: 0 auto;">
+                                    <div class="flex_1">
+                                        <div style="display: flex;">
+                                            <div>
+                                                <i class="icon-message"></i>
+                                                <span class="roll_count">35</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-heart"></i>
+                                                <span class="roll_count">498</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-eye"></i>
+                                                <span class="roll_count">800</span>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div>
+                                                <i class="icon-like"></i>
+                                                <span class="roll_count">10</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-star"></i>
+                                                <span class="roll_count">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex_2">
+                                        <div class="flex_2_text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor
+                                            </p>
+                                        </div>
+                                        <div class="follow_container">
+                                            <span><i class="icon-add follow"></i></span>
+                                            <span class="roll_count follow_text">Follow</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                         <h3 class="portfolio_title">DANIELLA PIEZOWARDORAWSKI</h3>
                         <p class="portfolio_desc">Motion Graphics Designer </p>
                     </div>
+
                     <div class="portfolio_item">
-                        <div class="portfolio_item_pict_cont">
+                        <div class="portfolio_item_pict_cont" onmouseover="onRollHandler(true, this)"
+                            onmouseout="onRollHandler(false, this)">
                             <img class="portfolio_picture" src="./images/portfolio/_Clip Group_4.jpg"
                                 alt="_Clip Group_4" />
                             <div class="roll_over">
-
+                                <div style="max-width: 90%;margin: 0 auto;">
+                                    <div class="flex_1">
+                                        <div style="display: flex;">
+                                            <div>
+                                                <i class="icon-message"></i>
+                                                <span class="roll_count">35</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-heart"></i>
+                                                <span class="roll_count">498</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-eye"></i>
+                                                <span class="roll_count">800</span>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div>
+                                                <i class="icon-like"></i>
+                                                <span class="roll_count">10</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-star"></i>
+                                                <span class="roll_count">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex_2">
+                                        <div class="flex_2_text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor
+                                            </p>
+                                        </div>
+                                        <div class="follow_container">
+                                            <span><i class="icon-add follow"></i></span>
+                                            <span class="roll_count follow_text">Follow</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                         <h3 class="portfolio_title">DANIELLA PIEZOWARDORAWSKI</h3>
                         <p class="portfolio_desc">Motion Graphics Designer </p>
                     </div>
 
                     <div class="portfolio_item">
-                        <div class="portfolio_item_pict_cont">
+                        <div class="portfolio_item_pict_cont" onmouseover="onRollHandler(true, this)"
+                            onmouseout="onRollHandler(false, this)">
                             <img class="portfolio_picture" src="./images/portfolio/_Clip Group_5.jpg"
                                 alt="_Clip Group_5" />
                             <div class="roll_over">
-
+                                <div style="max-width: 90%;margin: 0 auto;">
+                                    <div class="flex_1">
+                                        <div style="display: flex;">
+                                            <div>
+                                                <i class="icon-message"></i>
+                                                <span class="roll_count">35</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-heart"></i>
+                                                <span class="roll_count">498</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-eye"></i>
+                                                <span class="roll_count">800</span>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div>
+                                                <i class="icon-like"></i>
+                                                <span class="roll_count">10</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-star"></i>
+                                                <span class="roll_count">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex_2">
+                                        <div class="flex_2_text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor
+                                            </p>
+                                        </div>
+                                        <div class="follow_container">
+                                            <span><i class="icon-add follow"></i></span>
+                                            <span class="roll_count follow_text">Follow</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                         <h3 class="portfolio_title">STANLEY KUBROWSKI LAWRENCE</h3>
                         <p class="portfolio_desc">Motion Graphics Designer </p>
                     </div>
+
                     <div class="portfolio_item">
-                        <div class="portfolio_item_pict_cont">
+                        <div class="portfolio_item_pict_cont" 
+                            onmouseover="onRollHandler(true, this)"
+                            onmouseout="onRollHandler(false, this)">
                             <img class="portfolio_picture" src="./images/portfolio/_Clip Group_6.jpg"
                                 alt="_Clip Group_6" />
                             <div class="roll_over">
-
+                                <div style="max-width: 90%;margin: 0 auto;">
+                                    <div class="flex_1">
+                                        <div style="display: flex;">
+                                            <div>
+                                                <i class="icon-message"></i>
+                                                <span class="roll_count">35</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-heart"></i>
+                                                <span class="roll_count">498</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-eye"></i>
+                                                <span class="roll_count">800</span>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div>
+                                                <i class="icon-like"></i>
+                                                <span class="roll_count">10</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-star"></i>
+                                                <span class="roll_count">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex_2">
+                                        <div class="flex_2_text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor
+                                            </p>
+                                        </div>
+                                        <div class="follow_container">
+                                            <span><i class="icon-add follow"></i></span>
+                                            <span class="roll_count follow_text">Follow</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                         <h3 class="portfolio_title">DANIELLA PIEZOWARDORAWSKI</h3>
                         <p class="portfolio_desc">Motion Graphics Designer </p>
                     </div>
+
                     <div class="portfolio_item">
-                        <div class="portfolio_item_pict_cont">
+                        <div class="portfolio_item_pict_cont" 
+                            onmouseover="onRollHandler(true, this)"
+                            onmouseout="onRollHandler(false, this)">
                             <img class="portfolio_picture" src="./images/portfolio/_Clip Group_7.jpg"
                                 alt="_Clip Group_7" />
                             <div class="roll_over">
-
+                                <div style="max-width: 90%;margin: 0 auto;">
+                                    <div class="flex_1">
+                                        <div style="display: flex;">
+                                            <div>
+                                                <i class="icon-message"></i>
+                                                <span class="roll_count">35</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-heart"></i>
+                                                <span class="roll_count">498</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-eye"></i>
+                                                <span class="roll_count">800</span>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div>
+                                                <i class="icon-like"></i>
+                                                <span class="roll_count">10</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-star"></i>
+                                                <span class="roll_count">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex_2">
+                                        <div class="flex_2_text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor
+                                            </p>
+                                        </div>
+                                        <div class="follow_container">
+                                            <span><i class="icon-add follow"></i></span>
+                                            <span class="roll_count follow_text">Follow</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                         <h3 class="portfolio_title">DANIELLA PIEZOWARDORAWSKI</h3>
                         <p class="portfolio_desc">Motion Graphics Designer </p>
                     </div>
+
                     <div class="portfolio_item">
-                        <div class="portfolio_item_pict_cont">
+                        <div class="portfolio_item_pict_cont" 
+                            onmouseover="onRollHandler(true, this)"
+                            onmouseout="onRollHandler(false, this)">
                             <img class="portfolio_picture" src="./images/portfolio/_Clip Group_8.jpg"
                                 alt="_Clip Group_8" />
                             <div class="roll_over">
-
+                                <div style="max-width: 90%;margin: 0 auto;">
+                                    <div class="flex_1">
+                                        <div style="display: flex;">
+                                            <div>
+                                                <i class="icon-message"></i>
+                                                <span class="roll_count">35</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-heart"></i>
+                                                <span class="roll_count">498</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-eye"></i>
+                                                <span class="roll_count">800</span>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div>
+                                                <i class="icon-like"></i>
+                                                <span class="roll_count">10</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-star"></i>
+                                                <span class="roll_count">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex_2">
+                                        <div class="flex_2_text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor
+                                            </p>
+                                        </div>
+                                        <div class="follow_container">
+                                            <span><i class="icon-add follow"></i></span>
+                                            <span class="roll_count follow_text">Follow</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                         <h3 class="portfolio_title">DANIELLA PIEZOWARDORAWSKI</h3>
                         <p class="portfolio_desc">Motion Graphics Designer </p>
@@ -255,6 +510,8 @@
                 </div>
             </div>
         </section>
+
+        <!--  -->
     </main>
 </body>
 

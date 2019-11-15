@@ -36,6 +36,8 @@
 
 .portfolio_picture {
     width: 100%;
+    max-width: 585px;
+    max-height: 313px;
 }
 
 .portfolio_title, .portfolio_desc {
@@ -62,29 +64,39 @@
     background-color: #333;
     position: absolute;
     width: 100%;
-    height: 150px;
     bottom: 0;
-    opacity: 1;
-    // visibility: hidden;
+    opacity: 0;  
     transition: opacity 0.5s;
     color: #fff;
+    font-size: 17px;
+
+    .roll_content_container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
 
     i {
         color: #fff;
-        font-size: 24px;
         float: left;
-        margin-right: 10px;
+
+        &:hover {
+            color: #3ba2d4;
+            cursor: pointer;
+        }
     }
 
     .flex_1 {
         display: flex;
         justify-content: space-between;
+        margin-top: 10px;
     }
 
     .flex_2 {
-        margin-top: 60px;
+        margin-top: 40px;
+        margin-bottom: 30px;
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
 
         .flex_2_text {
             max-width: 60%;
@@ -93,6 +105,21 @@
         }
     }
 
+    .roll_count {
+        margin: 10px;
+    }
+
+    .follow_container {
+        margin-right: 5px;
+
+        i.icon-add.follow {
+            font-size: 24px;
+        }
+
+        .follow_text {
+            font-size: 20px;
+        }
+    }
 }
 
 

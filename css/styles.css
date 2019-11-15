@@ -170,6 +170,8 @@ header {
 
 .portfolio_picture {
   width: 100%;
+  max-width: 585px;
+  max-height: 313px;
 }
 
 .portfolio_title, .portfolio_desc {
@@ -196,31 +198,52 @@ header {
   background-color: #333;
   position: absolute;
   width: 100%;
-  height: 150px;
   bottom: 0;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.5s;
   color: #fff;
+  font-size: 17px;
+}
+.roll_over .roll_content_container {
+  max-width: 90%;
+  margin: 0 auto;
 }
 .roll_over i {
   color: #fff;
-  font-size: 24px;
   float: left;
-  margin-right: 10px;
+}
+.roll_over i:hover {
+  color: #3ba2d4;
+  cursor: pointer;
 }
 .roll_over .flex_1 {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 .roll_over .flex_2 {
-  margin-top: 60px;
+  margin-top: 40px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .roll_over .flex_2 .flex_2_text {
   max-width: 60%;
   max-height: 38px;
   overflow: hidden;
+}
+.roll_over .roll_count {
+  margin: 10px;
+}
+.roll_over .follow_container {
+  margin-right: 5px;
+}
+.roll_over .follow_container i.icon-add.follow {
+  font-size: 24px;
+}
+.roll_over .follow_container .follow_text {
+  font-size: 20px;
 }
 
 * {

@@ -1,5 +1,5 @@
+// Slider handler
 $(document).ready(function () {
-
     $("#owl-demo").owlCarousel({
         navigation: true,
         slideSpeed: 100,
@@ -11,3 +11,13 @@ $(document).ready(function () {
         items : 1, 
     });
 });
+
+// Portfolios on roll handlers
+function onRollHandler(boolean, target) {
+    var rollOverNode = target.children[1];
+    if(boolean) {
+        rollOverNode.style.opacity = 0.8;
+    } else {
+        rollOverNode.style.opacity = 0;
+    }
+}
