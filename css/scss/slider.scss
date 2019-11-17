@@ -1,28 +1,26 @@
 @import './variables.scss';
 
-.slider {
-    .item {
-        padding-top: $slider_padding_top;
-        height:$slider_item_height;
-        background-image: url("../images/slider/CbVbCs.jpg");
-        background-color: $slider_bg_color;
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-    }
+.slider .item {
+    padding-top: $slider_padding_top;
+    height:$slider_item_height;
+    background-image: url("../images/slider/CbVbCs.jpg");
+    background-color: $slider_bg_color;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
 
-    .slider_text_container {
-        @extend .project_half_container;
-        margin-left: $slider_text_container_marginleft;
-    }
+.slider_text_container {
+    @extend .project_half_container;
+    margin-left: $slider_text_container_marginleft;
+}
 
-    .slider_text {
-        color: $slider_text_color;
-        font-size: $slider_text_fontsize;
-        max-height: $slider_text_container_maxheight;
-        overflow: hidden;
-        text-transform: uppercase;
-    }
+.slider_text {
+    color: $slider_text_color;
+    font-size: $slider_text_fontsize;
+    max-height: $slider_text_container_maxheight;
+    overflow: hidden;
+    text-transform: uppercase;
 }
 
 .owl-theme .owl-dots {

@@ -8,16 +8,16 @@ $(document).ready(function () {
         autoplay: true,
         autoPlaySpeed: 1000,
         autoPlayTimeout: 1000,
-        items : 1, 
+        items : 1,
     });
 });
 
-// Portfolios on roll handlers
+// Portfolios on roll handler
 function onRollHandler(boolean, target) {
     var rollOverNode = target.children[0].children[1];
     if(boolean) {
-        rollOverNode.style.opacity = 0.8;
+        rollOverNode.setAttribute("style", `visibility: visible; opacity: 0.8;`);
     } else {
-        rollOverNode.style.opacity = 0;
+        rollOverNode.setAttribute("style", `visibility: hidden; opacity: 0;`);
     }
 }

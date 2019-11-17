@@ -14,6 +14,7 @@
 
 .project_head_container {
     margin-bottom: $project_head_container_margin_bottom;
+    
     h2 {
         @extend .ellipsis;
         font-size: $head_fontsize;

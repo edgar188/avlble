@@ -13,10 +13,11 @@
 }
 .subscribe_content {
     font-size: $subscribe_content_fontsize;
-    .subscribe_content_link {
-        color: $blue_color;
-        margin-right: 30px;
-    }
+}
+
+.subscribe_content_link {
+    color: $blue_color;
+    margin-right: 30px;
 }
 
 

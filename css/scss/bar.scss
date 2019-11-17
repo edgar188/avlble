@@ -18,42 +18,43 @@
     & > div {
         margin-right: $bar_form_div_marginright;
     }
+}
 
-    .bar_search_container {
-        @extend .project_half_container;
+.bar_search_container {
+    @extend .project_half_container;
+}
 
-        .bar_search {
-            width: $bar_search_width;
-            font-size: $bar_text_fontsize;
-            border: none;
-            text-indent: $bar_search_textindent;
-            padding: $bar_search_padding;
-            color: $blue_color;
-            &::placeholder {
-                color: $blue_color;
-                text-transform: uppercase;
-                font-family: $gotham_medium;
-            }
-        }
+.bar_search {
+    width: $bar_search_width;
+    font-size: $bar_text_fontsize;
+    border: none;
+    text-indent: $bar_search_textindent;
+    padding: $bar_search_padding;
+    color: $blue_color;
+    &::placeholder {
+        color: $blue_color;
+        text-transform: uppercase;
+        font-family: $gotham_medium;
     }
+}
 
-    .bar_date_container {
-        padding: $bar_date_container_padding;
-        background-color: $bar_field_bg_color;
-        cursor: $second_cursor;
-        .bar_date_text {
-            float: left;
-            font-size: $bar_text_fontsize;
-            color: $blue_color;
-            margin: $bar_date_text_margin;
-        }
-        i.icon-calendar {
-            font-size: $bar_icon_fontsize;
-            color: $bar_icon_color;
-        }
-    }
+.bar_date_container {
+    padding: $bar_date_container_padding;
+    background-color: $bar_field_bg_color;
+    cursor: $second_cursor;
+}
 
-    .custom_btn {
-        @include button_mixin($bar_text_fontsize, 21px, $bar_field_bg_color, $blue_color);
-    }
+.bar_date_text {
+    float: left;
+    font-size: $bar_text_fontsize;
+    color: $blue_color;
+    margin: $bar_date_text_margin;
+}
+i.icon-calendar {
+    font-size: $bar_icon_fontsize;
+    color: $bar_icon_color;
+}
+
+.custom_btn {
+    @include button_mixin($bar_text_fontsize, 21px, $bar_field_bg_color, $blue_color);
 }

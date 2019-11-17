@@ -1,0 +1,138 @@
+@import './variables.scss';
+@import './mixins.scss';
+@import './global.scss';
+
+$laptop_large: 1440px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobile_large: 425px;
+$mobile_medium: 375px;
+$mobile_small: 320px;
+
+$minimize_number: 0.8;
+
+@media (max-width: $laptop_large) {
+    // ------------------------- Header ----------------------------
+
+   header {
+        padding: 35px 0;
+    }
+
+    .header_auth a {
+        font-size: round($header_link_fontsize * $minimize_number);
+    }
+
+    .header_logo {
+        width: round(327px * $minimize_number);
+    }
+    // ----------------------- Top Bar --------------------------
+
+    .bar {
+        padding: 10px 0;
+    }
+
+    .bar_search {
+        padding: 13px;
+        font-size: round($bar_text_fontsize * $minimize_number);
+        text-indent: round($bar_search_textindent * $minimize_number);
+    }
+
+    .bar_date_container {
+        padding: 4.5px 15px;
+    }
+
+    .bar_date_text {
+        font-size: round($bar_text_fontsize * $minimize_number);
+        margin: 10px 20px 0 0;
+    }
+
+    i.icon-calendar {
+        font-size: round($bar_icon_fontsize * $minimize_number);
+        
+    }
+    
+    .custom_btn {
+        @include button_mixin(round($bar_text_fontsize * $minimize_number), 14px, $bar_field_bg_color, $blue_color);
+    }
+
+     // ----------------------- Slider --------------------------
+
+    .slider .item {
+        padding-top: round($slider_padding_top * $minimize_number);
+        height: round($slider_item_height * $minimize_number);
+    }
+
+    .slider_text {
+        font-size: round($slider_text_fontsize * $minimize_number);
+        max-height: round($slider_text_container_maxheight * $minimize_number);
+    }
+
+    // ------------------------- Portfolio -----------------------------
+
+    .project_head_container {
+        h2 {
+            font-size: round($head_fontsize * $minimize_number);
+        }
+    }
+    
+    .portfolio_item {
+        max-width: 45%;
+        margin-bottom: 140px;
+        margin-right: none;
+    }
+
+    .portfolio_picture {
+        max-height: 280px;
+    }
+
+   .roll_over {
+       bottom: 4px;
+        font-size: round($portfolio_roll_over_fontsize * $minimize_number);
+        
+       .bottom_content {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+   }
+
+   .roll_over .bottom_content .bottom_content_text {
+        max-height: 30px;
+    }
+
+   .roll_over .follow_container i.icon-add.follow {
+        font-size: round($portfolio_follow_icon_fontsize * $minimize_number);
+    }
+
+    .portfolio_title {
+        font-size: round($portfolio_title_fontsize * $minimize_number);
+        margin: 20px 0;
+    }
+    
+    .portfolio_desc {
+        font-size: round($portfolio_desc_fontsize * $minimize_number);
+        line-height: round($portfolio_desc_lineheight * $minimize_number);
+    }
+
+    // ------------------------- Subscribe -----------------------------
+    .subscribe_content {
+        font-size: round($subscribe_content_fontsize * $minimize_number);
+    }
+
+    .subscribe_content_link {
+        margin-right: 15px;
+    }
+
+    // -------------------------- Footer ---------------------------------
+    .footer_content {
+        font-size: round($footer_content_fontsize * $minimize_number);
+        line-height: round($footer_content_lineheight * $minimize_number);
+    }
+    
+    .footer_column {
+        max-width: $footer_column_maxwidth;
+    }
+
+    .footer_parag img {
+        width: round(163px * $minimize_number);
+    }
+}
