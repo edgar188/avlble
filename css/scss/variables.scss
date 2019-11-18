@@ -4,6 +4,7 @@ $link_opacity: 0.5;
 $second_cursor: pointer;
 // Blue color
 $blue_color: #3ba2d4;
+$yellow_color: #FFE44B;
 //Main Font-family
 $gotham_medium: 'GothamMedium', sans-serif;
 $gotham_bold: 'GothamBold', 'GothamMedium', sans-serif;
@@ -77,10 +78,24 @@ $subscribe_content_fontsize: 67px;
 
 // ----------------------- Footer ---------------------------
 $footer_bg_color: #fff;
-$footer_margin: 100px 0 180px;
+$footer_margin_top: 100px;
+$footer_margin_bottom: 180px;
 $footer_column_maxwidth: 25%;
 $footer_content_width: 75%;
 $footer_content_maxwidth: 1560px;
 $footer_content_fontsize: 30px;
 $footer_content_lineheight: 62px;
 $footer_link_color: #333;
+
+// --------------------- Media -----------------------------
+$laptop_large: 1440px;
+$laptop: 992px;
+$tablet: 600px;
+$mobile_large: 425px;
+$mobile: 375px;
+
+$multiply_size_laptop_large: 0.8;
+$multiply_size_laptop: 0.6;
+$multiply_size_tablet: 0.5;
+$multiply_size_mobile_large: 0.4;
+$multiply_size_mobile: 0.3;
