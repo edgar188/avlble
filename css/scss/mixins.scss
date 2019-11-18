@@ -18,6 +18,8 @@
     border: $border;
 }
 
+// ------------------------- Flex box mixins ----------------------------
+
 @mixin flex_mix {
     display: -webkit-box; 
     display: -moz-box;

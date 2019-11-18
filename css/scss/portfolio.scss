@@ -32,6 +32,7 @@
 
 .portfolio_picture {
     @include project_width($portfolio_item_width, $portfolio_item_maxwidth);
+    max-width: 100%;
     max-height: $portfolio_picture_maxheight;
 }
 

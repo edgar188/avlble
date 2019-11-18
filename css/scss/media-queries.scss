@@ -3,38 +3,45 @@
 @import './global.scss';
 
 $laptop_large: 1440px;
-$laptop: 1024px;
-$tablet: 768px;
+$laptop: 992px;
+$tablet: 600px;
 $mobile_large: 425px;
 $mobile_medium: 375px;
 $mobile_small: 320px;
 
-$minimize_number: 0.8;
+$minimize_number_laptop_large: 0.8;
+$minimize_number_laptop: 0.6;
+$minimize_number_tablet: 0.5;
 
 @media (max-width: $laptop_large) {
-    // ------------------------- Header ----------------------------
+    // -------------------------------- Header ------------------------------------
 
-   header {
+    header {
         padding: 35px 0;
     }
 
     .header_auth a {
-        font-size: round($header_link_fontsize * $minimize_number);
+        font-size: round($header_link_fontsize * $minimize_number_laptop_large);
     }
 
     .header_logo {
-        width: round(327px * $minimize_number);
+        width: round(327px * $minimize_number_laptop_large);
     }
-    // ----------------------- Top Bar --------------------------
+
+    // ---------------------------- Top Bar ---------------------------------------
 
     .bar {
         padding: 10px 0;
     }
 
+    .bar_search_container {
+        width: 46%;
+    }
+
     .bar_search {
         padding: 13px;
-        font-size: round($bar_text_fontsize * $minimize_number);
-        text-indent: round($bar_search_textindent * $minimize_number);
+        font-size: round($bar_text_fontsize * $minimize_number_laptop_large);
+        text-indent: round($bar_search_textindent * $minimize_number_laptop_large);
     }
 
     .bar_date_container {
@@ -42,36 +49,36 @@ $minimize_number: 0.8;
     }
 
     .bar_date_text {
-        font-size: round($bar_text_fontsize * $minimize_number);
+        font-size: round($bar_text_fontsize * $minimize_number_laptop_large);
         margin: 10px 20px 0 0;
     }
 
     i.icon-calendar {
-        font-size: round($bar_icon_fontsize * $minimize_number);
+        font-size: round($bar_icon_fontsize * $minimize_number_laptop_large);
         
     }
     
     .custom_btn {
-        @include button_mixin(round($bar_text_fontsize * $minimize_number), 14px, $bar_field_bg_color, $blue_color);
+        @include button_mixin(round($bar_text_fontsize * $minimize_number_laptop_large), 14px, $bar_field_bg_color, $blue_color);
     }
 
-     // ----------------------- Slider --------------------------
+    // ---------------------------------- Slider -----------------------------------------
 
     .slider .item {
-        padding-top: round($slider_padding_top * $minimize_number);
-        height: round($slider_item_height * $minimize_number);
+        padding-top: round($slider_padding_top * $minimize_number_laptop_large);
+        height: round($slider_item_height * $minimize_number_laptop_large);
     }
 
     .slider_text {
-        font-size: round($slider_text_fontsize * $minimize_number);
-        max-height: round($slider_text_container_maxheight * $minimize_number);
+        font-size: round($slider_text_fontsize * $minimize_number_laptop_large);
+        max-height: round($slider_text_container_maxheight * $minimize_number_laptop_large);
     }
 
-    // ------------------------- Portfolio -----------------------------
+    // ----------------------------------- Portfolio --------------------------------------
 
     .project_head_container {
         h2 {
-            font-size: round($head_fontsize * $minimize_number);
+            font-size: round($head_fontsize * $minimize_number_laptop_large);
         }
     }
     
@@ -87,7 +94,7 @@ $minimize_number: 0.8;
 
    .roll_over {
        bottom: 4px;
-        font-size: round($portfolio_roll_over_fontsize * $minimize_number);
+        font-size: round($portfolio_roll_over_fontsize * $minimize_number_laptop_large);
         
        .bottom_content {
             margin-top: 25px;
@@ -100,32 +107,38 @@ $minimize_number: 0.8;
     }
 
    .roll_over .follow_container i.icon-add.follow {
-        font-size: round($portfolio_follow_icon_fontsize * $minimize_number);
+        font-size: round($portfolio_follow_icon_fontsize * $minimize_number_laptop_large);
     }
 
     .portfolio_title {
-        font-size: round($portfolio_title_fontsize * $minimize_number);
+        font-size: round($portfolio_title_fontsize * $minimize_number_laptop_large);
         margin: 20px 0;
     }
     
     .portfolio_desc {
-        font-size: round($portfolio_desc_fontsize * $minimize_number);
-        line-height: round($portfolio_desc_lineheight * $minimize_number);
+        font-size: round($portfolio_desc_fontsize * $minimize_number_laptop_large);
+        line-height: round($portfolio_desc_lineheight * $minimize_number_laptop_large);
     }
 
-    // ------------------------- Subscribe -----------------------------
+    // --------------------------------- Subscribe -------------------------------------
+
+    .subscribe {
+        padding: 10px 0;
+    }
+
     .subscribe_content {
-        font-size: round($subscribe_content_fontsize * $minimize_number);
+        font-size: round($subscribe_content_fontsize * $minimize_number_laptop_large);
     }
 
     .subscribe_content_link {
         margin-right: 15px;
     }
 
-    // -------------------------- Footer ---------------------------------
+    // ------------------------------------ Footer -------------------------------------
+
     .footer_content {
-        font-size: round($footer_content_fontsize * $minimize_number);
-        line-height: round($footer_content_lineheight * $minimize_number);
+        font-size: round($footer_content_fontsize * $minimize_number_laptop_large);
+        line-height: round($footer_content_lineheight * $minimize_number_laptop_large);
     }
     
     .footer_column {
@@ -133,6 +146,264 @@ $minimize_number: 0.8;
     }
 
     .footer_parag img {
-        width: round(163px * $minimize_number);
+        width: round(163px * $minimize_number_laptop_large);
+    }
+}
+
+@media (max-width: $laptop) {
+    // ----------------------------------- Header -------------------------------------
+
+    header {
+        padding: 30px 0;
+    }
+
+    .header_auth a {
+        font-size: round($header_link_fontsize * $minimize_number_laptop);
+    }
+
+    .header_logo {
+        width: round(327px * $minimize_number_laptop);
+    }
+
+    // -------------------------------- Top bar ----------------------------------------
+
+    .bar_search_container {
+        width: 36%;
+    }
+
+    .bar_search {
+        padding: 8px;
+        font-size: round($bar_text_fontsize * $minimize_number_laptop);
+        text-indent: round($bar_search_textindent * $minimize_number_laptop);
+    }
+
+    .bar_date_container {
+        padding: 1px 5px;
+    }
+
+    .bar_date_text {
+        font-size: round($bar_text_fontsize * $minimize_number_laptop);
+        margin: 7px 20px 0 0;
+    }
+
+    i.icon-calendar {
+        font-size: round($bar_icon_fontsize * $minimize_number_laptop);
+        
+    }
+    
+    .custom_btn {
+        @include button_mixin(round($bar_text_fontsize * $minimize_number_laptop), 8px 8px 9px, $bar_field_bg_color, $blue_color);
+    }
+
+    // ---------------------------------- Slider -----------------------------------------
+
+    .slider .item {
+        padding-top: round($slider_padding_top * $minimize_number_laptop);
+        height: round($slider_item_height * $minimize_number_laptop);
+    }
+
+    .slider_text {
+        font-size: round($slider_text_fontsize * $minimize_number_laptop);
+        max-height: round($slider_text_container_maxheight * $minimize_number_laptop - 128);
+    }
+
+    // ----------------------------------- Portfolio --------------------------------------
+
+    .project_head_container h2 {
+        font-size: round($head_fontsize * $minimize_number_laptop);
+    }
+    
+    .portfolio_item {
+        margin-bottom: 100px;
+    }
+
+   .roll_over {
+        font-size: round($portfolio_roll_over_fontsize * $minimize_number_laptop);
+
+       .bottom_content {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+   }
+
+   .roll_over .bottom_content .bottom_content_text {
+        max-height: 22px;
+    }
+
+   .roll_over .follow_container i.icon-add.follow {
+        font-size: round($portfolio_follow_icon_fontsize * $minimize_number_laptop);
+    }
+
+    .portfolio_title {
+        font-size: round($portfolio_title_fontsize * $minimize_number_laptop);
+        margin: 15px 0;
+    }
+    
+    .portfolio_desc {
+        font-size: round($portfolio_desc_fontsize * $minimize_number_laptop);
+        line-height: round($portfolio_desc_lineheight * $minimize_number_laptop);
+    }
+
+    // --------------------------------- Subscribe -------------------------------------
+
+    .subscribe_content {
+        font-size: round($subscribe_content_fontsize * $minimize_number_laptop);
+    }
+
+    .subscribe_content_link {
+        margin-right: 10px;
+    }
+
+    // ---------------------------------- Footer ----------------------------------------
+
+    .footer_content {
+        font-size: round($footer_content_fontsize * $minimize_number_laptop);
+        line-height: round($footer_content_lineheight * $minimize_number_laptop);
+    }
+    
+    .footer_column {
+        max-width: $footer_column_maxwidth;
+    }
+
+    .footer_parag img {
+        width: round(163px * $minimize_number_laptop);
+    }
+}
+
+@media (max-width: $tablet) {
+
+    // ----------------------------------- Header ------------------------------------
+    header {
+        padding: 20px 0;
+    }
+
+    .header_auth a {
+        font-size: round($header_link_fontsize * $minimize_number_tablet);
+        &:first-of-type {
+            margin-right: 15px;
+        }
+    }
+
+    .header_logo {
+        width: round(327px * $minimize_number_tablet / 1.5);
+    }
+
+    // -------------------------------- Top bar ----------------------------------------
+
+    .bar_search_container {
+        width: 27%;
+    }
+
+    .bar_search {
+        padding: 10px 0 11px;
+        font-size: round($bar_text_fontsize * $minimize_number_tablet);
+        text-indent: round($bar_search_textindent * $minimize_number_tablet);
+    }
+
+    .bar_date_container {
+        padding: 5px 5px;
+    }
+
+    .bar_date_text {
+        font-size: round($bar_text_fontsize * $minimize_number_tablet);
+        margin: 5px 5px 0 0;
+    }
+
+    i.icon-calendar {
+        font-size: round($bar_icon_fontsize * $minimize_number_tablet);
+        
+    }
+    
+    .custom_btn {
+        @include button_mixin(round($bar_text_fontsize * $minimize_number_tablet), 11px 8px 11px, $bar_field_bg_color, $blue_color);
+    }
+
+    // ---------------------------------- Slider -----------------------------------------
+
+    .slider .item {
+        padding-top: round($slider_padding_top * $minimize_number_tablet);
+        height: round($slider_item_height * $minimize_number_tablet);
+    }
+
+    .slider_text {
+        font-size: round($slider_text_fontsize * $minimize_number_tablet);
+        max-height: round($slider_text_container_maxheight * $minimize_number_tablet - 100);
+    }
+
+    .owl-theme .owl-dots {
+        left: 45%;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 10px;
+        height: 10px;
+    }
+
+    // ----------------------------------- Portfolio --------------------------------------
+
+    .project_head_container {
+        text-align: center;
+    }
+
+    .project_head_container h2 {
+        font-size: round($head_fontsize * $minimize_number_tablet);
+    }
+    
+    .portfolio_items_container {
+        justify-content: center;
+    }
+
+    .portfolio_item {
+        margin-bottom: 50px;
+        margin-right: 0;
+        max-width: 80%;
+    }
+
+    .roll_over {
+        font-size: round($portfolio_roll_over_fontsize * $minimize_number_tablet);
+
+        .bottom_content {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .roll_over .bottom_content .bottom_content_text {
+        max-height: 18px;
+    }
+
+    .roll_over .follow_container i.icon-add.follow {
+        font-size: round($portfolio_follow_icon_fontsize * $minimize_number_tablet);
+    }
+
+    .portfolio_title {
+        font-size: round($portfolio_title_fontsize * $minimize_number_tablet);
+        margin: 10px 0;
+    }
+    
+    .portfolio_desc {
+        font-size: round($portfolio_desc_fontsize * $minimize_number_tablet);
+        line-height: round($portfolio_desc_lineheight * $minimize_number_tablet);
+    }
+
+    // --------------------------------- Subscribe -------------------------------------
+
+    .subscribe_content {
+        font-size: round($subscribe_content_fontsize * $minimize_number_tablet);
+    }
+
+    .subscribe_content_link {
+        margin-right: 5px;
+    }
+
+    // ---------------------------------- Footer ----------------------------------------
+
+    .footer_content {
+        font-size: round($footer_content_fontsize * $minimize_number_tablet);
+        line-height: round($footer_content_lineheight * $minimize_number_tablet);
+    }
+    
+    .footer_parag img {
+        width: round(163px * $minimize_number_tablet - 15);
     }
 }

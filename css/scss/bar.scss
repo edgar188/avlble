@@ -1,6 +1,6 @@
-@import './global.scss';
-@import './variables.scss';
-@import './mixins.scss';
+// @import './global.scss';
+// @import './variables.scss';
+// @import './mixins.scss';
 
 .bar {
     background-color: $bar_bg_color;
@@ -25,6 +25,7 @@
 }
 
 .bar_search {
+    @extend .ellipsis;
     width: $bar_search_width;
     font-size: $bar_text_fontsize;
     border: none;

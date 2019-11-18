@@ -1,5 +1,11 @@
 @import './fonts/font-icons/style.css';
 @import './fonts/Gotham-Font/style.css';
+.ellipsis, .footer_parag, .portfolio_title, .portfolio_desc, .bar_search, .project_head_container h2, .head_container h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .project_container, .footer_container, .subscribe_container, .portfolio_container, .bar_container, .header_container {
   width: 82%;
   max-width: 100%;
@@ -9,12 +15,6 @@
 .project_half_container, .slider_text_container, .bar_search_container {
   width: 50%;
   max-width: 1250px;
-}
-
-.ellipsis, .footer_parag, .portfolio_title, .portfolio_desc, .project_head_container h2, .head_container h2 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .project_head_container, .head_container {
@@ -53,32 +53,6 @@ header {
 }
 .header_auth a:first-of-type {
   margin-right: 40px;
-}
-
-.project_container, .footer_container, .subscribe_container, .portfolio_container, .bar_container, .header_container {
-  width: 82%;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.project_half_container, .slider_text_container, .bar_search_container {
-  width: 50%;
-  max-width: 1250px;
-}
-
-.ellipsis, .footer_parag, .portfolio_title, .portfolio_desc, .project_head_container h2, .head_container h2 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.project_head_container, .head_container {
-  margin-bottom: 60px;
-}
-.project_head_container h2, .head_container h2 {
-  font-size: 50px;
-  font-family: "GothamMedium", sans-serif;
-  color: head_color;
 }
 
 .bar {
@@ -175,6 +149,12 @@ i.icon-calendar {
   height: 15px;
 }
 
+.ellipsis, .footer_parag, .portfolio_title, .portfolio_desc, .project_head_container h2, .head_container h2, .bar_search {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .project_container, .footer_container, .subscribe_container, .portfolio_container, .header_container, .bar_container {
   width: 82%;
   max-width: 100%;
@@ -184,12 +164,6 @@ i.icon-calendar {
 .project_half_container, .bar_search_container, .slider_text_container {
   width: 50%;
   max-width: 1250px;
-}
-
-.ellipsis, .footer_parag, .portfolio_title, .portfolio_desc, .project_head_container h2, .head_container h2 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .project_head_container, .head_container {
@@ -232,6 +206,7 @@ i.icon-calendar {
 .portfolio_picture {
   width: 100%;
   max-width: 585px;
+  max-width: 100%;
   max-height: 313px;
 }
 
@@ -321,6 +296,12 @@ i.icon-calendar {
   font-size: portfolio_follow_text_fontsize;
 }
 
+.ellipsis, .footer_parag, .project_head_container h2, .bar_search, .head_container h2, .portfolio_title, .portfolio_desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .project_container, .footer_container, .subscribe_container, .header_container, .bar_container, .portfolio_container {
   width: 82%;
   max-width: 100%;
@@ -330,12 +311,6 @@ i.icon-calendar {
 .project_half_container, .bar_search_container, .slider_text_container {
   width: 50%;
   max-width: 1250px;
-}
-
-.ellipsis, .footer_parag, .project_head_container h2, .head_container h2, .portfolio_title, .portfolio_desc {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .project_head_container, .head_container {
@@ -397,6 +372,12 @@ footer {
   color: #333;
 }
 
+.ellipsis, .project_head_container h2, .bar_search, .head_container h2, .portfolio_title, .portfolio_desc, .footer_parag {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .project_container, .header_container, .bar_container, .portfolio_container, .subscribe_container, .footer_container {
   width: 82%;
   max-width: 100%;
@@ -406,12 +387,6 @@ footer {
 .project_half_container, .bar_search_container, .slider_text_container {
   width: 50%;
   max-width: 1250px;
-}
-
-.ellipsis, .project_head_container h2, .head_container h2, .portfolio_title, .portfolio_desc, .footer_parag {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .project_head_container, .head_container {
@@ -438,6 +413,10 @@ footer {
 
   .bar {
     padding: 10px 0;
+  }
+
+  .bar_search_container {
+    width: 46%;
   }
 
   .bar_search {
@@ -519,6 +498,10 @@ footer {
     line-height: 26px;
   }
 
+  .subscribe {
+    padding: 10px 0;
+  }
+
   .subscribe_content {
     font-size: 54px;
   }
@@ -538,6 +521,244 @@ footer {
 
   .footer_parag img {
     width: 130px;
+  }
+}
+@media (max-width: 992px) {
+  header {
+    padding: 30px 0;
+  }
+
+  .header_auth a {
+    font-size: 22px;
+  }
+
+  .header_logo {
+    width: 196px;
+  }
+
+  .bar_search_container {
+    width: 36%;
+  }
+
+  .bar_search {
+    padding: 8px;
+    font-size: 15px;
+    text-indent: 12px;
+  }
+
+  .bar_date_container {
+    padding: 1px 5px;
+  }
+
+  .bar_date_text {
+    font-size: 15px;
+    margin: 7px 20px 0 0;
+  }
+
+  i.icon-calendar {
+    font-size: 30px;
+  }
+
+  .custom_btn {
+    font-size: 15px;
+    font-family: "GothamMedium", sans-serif;
+    padding: 8px 8px 9px;
+    background-color: #fff;
+    color: #3ba2d4;
+    border: none;
+  }
+
+  .slider .item {
+    padding-top: 54px;
+    height: 570px;
+  }
+
+  .slider_text {
+    font-size: 37px;
+    max-height: 160px;
+  }
+
+  .project_head_container h2, .head_container h2 {
+    font-size: 30px;
+  }
+
+  .portfolio_item {
+    margin-bottom: 100px;
+  }
+
+  .roll_over {
+    font-size: 10px;
+  }
+  .roll_over .bottom_content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .roll_over .bottom_content .bottom_content_text {
+    max-height: 22px;
+  }
+
+  .roll_over .follow_container i.icon-add.follow {
+    font-size: 14px;
+  }
+
+  .portfolio_title {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+
+  .portfolio_desc {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .subscribe_content {
+    font-size: 40px;
+  }
+
+  .subscribe_content_link {
+    margin-right: 10px;
+  }
+
+  .footer_content {
+    font-size: 18px;
+    line-height: 37px;
+  }
+
+  .footer_column {
+    max-width: 25%;
+  }
+
+  .footer_parag img {
+    width: 98px;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    padding: 20px 0;
+  }
+
+  .header_auth a {
+    font-size: 18px;
+  }
+  .header_auth a:first-of-type {
+    margin-right: 15px;
+  }
+
+  .header_logo {
+    width: 109px;
+  }
+
+  .bar_search_container {
+    width: 27%;
+  }
+
+  .bar_search {
+    padding: 10px 0 11px;
+    font-size: 13px;
+    text-indent: 10px;
+  }
+
+  .bar_date_container {
+    padding: 5px 5px;
+  }
+
+  .bar_date_text {
+    font-size: 13px;
+    margin: 5px 5px 0 0;
+  }
+
+  i.icon-calendar {
+    font-size: 25px;
+  }
+
+  .custom_btn {
+    font-size: 13px;
+    font-family: "GothamMedium", sans-serif;
+    padding: 11px 8px 11px;
+    background-color: #fff;
+    color: #3ba2d4;
+    border: none;
+  }
+
+  .slider .item {
+    padding-top: 45px;
+    height: 475px;
+  }
+
+  .slider_text {
+    font-size: 31px;
+    max-height: 140px;
+  }
+
+  .owl-theme .owl-dots {
+    left: 45%;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+  }
+
+  .project_head_container, .head_container {
+    text-align: center;
+  }
+
+  .project_head_container h2, .head_container h2 {
+    font-size: 25px;
+  }
+
+  .portfolio_items_container {
+    justify-content: center;
+  }
+
+  .portfolio_item {
+    margin-bottom: 50px;
+    margin-right: 0;
+    max-width: 80%;
+  }
+
+  .roll_over {
+    font-size: 9px;
+  }
+  .roll_over .bottom_content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .roll_over .bottom_content .bottom_content_text {
+    max-height: 18px;
+  }
+
+  .roll_over .follow_container i.icon-add.follow {
+    font-size: 12px;
+  }
+
+  .portfolio_title {
+    font-size: 17px;
+    margin: 10px 0;
+  }
+
+  .portfolio_desc {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .subscribe_content {
+    font-size: 34px;
+  }
+
+  .subscribe_content_link {
+    margin-right: 5px;
+  }
+
+  .footer_content {
+    font-size: 15px;
+    line-height: 31px;
+  }
+
+  .footer_parag img {
+    width: 67px;
   }
 }
 * {
