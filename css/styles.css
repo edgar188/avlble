@@ -202,7 +202,7 @@ i.icon-calendar {
   background-color: #333;
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 4px;
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
@@ -397,7 +397,6 @@ footer {
   }
 
   .roll_over {
-    bottom: 4px;
     font-size: 14px;
   }
   .roll_over .bottom_content {
