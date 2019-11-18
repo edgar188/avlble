@@ -12,6 +12,8 @@ $mobile_small: 320px;
 $minimize_number_laptop_large: 0.8;
 $minimize_number_laptop: 0.6;
 $minimize_number_tablet: 0.5;
+$minimize_number_mobile_large: 0.4;
+
 
 @media (max-width: $laptop_large) {
     // -------------------------------- Header ------------------------------------
@@ -327,7 +329,7 @@ $minimize_number_tablet: 0.5;
 
     .slider_text {
         font-size: round($slider_text_fontsize * $minimize_number_tablet);
-        max-height: round($slider_text_container_maxheight * $minimize_number_tablet - 100);
+        max-height: round($slider_text_container_maxheight * $minimize_number_tablet - 110);
     }
 
     .owl-theme .owl-dots {
@@ -401,9 +403,129 @@ $minimize_number_tablet: 0.5;
     .footer_content {
         font-size: round($footer_content_fontsize * $minimize_number_tablet);
         line-height: round($footer_content_lineheight * $minimize_number_tablet);
+        width: 100%;
     }
     
     .footer_parag img {
-        width: round(163px * $minimize_number_tablet - 15);
+        width: round(163px * $minimize_number_tablet);
+    }
+}
+
+@media (max-width: $mobile_large) {
+     // ----------------------------------- Header ------------------------------------
+
+     header {
+        padding: 15px 0;
+    }
+
+    .header_auth a {
+        font-size: round($header_link_fontsize * $minimize_number_mobile_large);
+        &:first-of-type {
+            margin-right: 15px;
+        }
+    }
+
+    .header_logo {
+        width: round(327px * $minimize_number_mobile_large / 1.5);
+    }
+
+    // ----------------------------------- Top Bar ------------------------------------
+
+    .bar {
+        padding: 5px 0;
+    }
+
+    .bar_search {
+        padding: 6px 0 5px;
+        font-size: round($bar_text_fontsize * $minimize_number_mobile_large);
+        text-indent: round($bar_search_textindent * $minimize_number_mobile_large);
+    }
+
+    .bar_date_container {
+        padding: 0 5px;
+    }
+
+    .bar_date_text {
+        font-size: round($bar_text_fontsize * $minimize_number_mobile_large);
+    }
+
+    i.icon-calendar {
+        font-size: round($bar_icon_fontsize * $minimize_number_mobile_large);
+        
+    }
+    
+    .custom_btn {
+        @include button_mixin(round($bar_text_fontsize * $minimize_number_mobile_large), 6px 5px 5px, $bar_field_bg_color, $blue_color);
+    }
+
+    // ---------------------------------- Slider -----------------------------------------
+
+    .slider .item {
+        padding-top: round($slider_padding_top * $minimize_number_mobile_large);
+        height: round($slider_item_height * $minimize_number_mobile_large);
+    }
+
+    .slider_text {
+        font-size: round($slider_text_fontsize * $minimize_number_mobile_large);
+        max-height: round($slider_text_container_maxheight * $minimize_number_mobile_large - 110);
+    }
+
+     // ----------------------------------- Portfolio --------------------------------------
+
+
+    .project_head_container h2 {
+        font-size: round($head_fontsize * $minimize_number_mobile_large);
+    }
+    
+    .roll_over {
+        font-size: round($portfolio_roll_over_fontsize * $minimize_number_mobile_large);
+
+        .bottom_content {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .roll_over .bottom_content .bottom_content_text {
+        max-height: 14px;
+    }
+
+    .roll_over .follow_container i.icon-add.follow {
+        font-size: round($portfolio_follow_icon_fontsize * $minimize_number_mobile_large);
+    }
+
+    .roll_over .roll_count {
+        margin: 5px;
+    }
+
+    .portfolio_title {
+        font-size: round($portfolio_title_fontsize * $minimize_number_mobile_large);
+        margin: 5px 0;
+    }
+    
+    .portfolio_desc {
+        font-size: round($portfolio_desc_fontsize * $minimize_number_mobile_large);
+        line-height: round($portfolio_desc_lineheight * $minimize_number_mobile_large);
+    }
+
+    // --------------------------------- Subscribe -------------------------------------
+
+    .subscribe {
+        padding: 5px 0;
+    }
+
+    .subscribe_content {
+        font-size: round($subscribe_content_fontsize * $minimize_number_mobile_large);
+    }
+
+    // ---------------------------------- Footer ----------------------------------------
+
+    .footer_content {
+        font-size: round($footer_content_fontsize * $minimize_number_mobile_large);
+        line-height: round($footer_content_lineheight * $minimize_number_mobile_large);
+    }
+    
+    .footer_parag img {
+        width: round(163px * $minimize_number_mobile_large);
     }
 }
