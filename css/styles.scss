@@ -1,15 +1,15 @@
-@import './fonts/font-icons/style.css';
-@import './fonts/Gotham-Font/style.css';
-@import './scss/variables.scss';
-@import './scss/mixins.scss';
-@import './scss/global.scss';
-@import './scss/header.scss';
-@import './scss/bar.scss';
-@import './scss/slider.scss';
-@import './scss/portfolio.scss';
-@import './scss/subscribe.scss';
-@import './scss/footer.scss';
-@import './scss/media-queries.scss';
+@import './fonts/font-icons/style.css' , 
+        './fonts/Gotham-Font/style.css',
+        './scss/variables.scss',
+        './scss/mixins.scss',
+        './scss/global.scss',
+        './scss/header.scss',
+        './scss/bar.scss',
+        './scss/slider.scss',
+        './scss/portfolio.scss',
+        './scss/subscribe.scss',
+        './scss/footer.scss',
+        './scss/media-queries.scss';
 
 * {
     padding: 0;
