@@ -1,19 +1,18 @@
 header {
-    background-color: $header_bg_color;
+    background-color: $bg_primary_color;
     padding: $header_padding;
 }
 
-.header_container {
-    @extend .project_container;
+.header_cont {
     @include flex_mix;
     @include flex_align_items_mix($to: flex-end);
     justify-content: space-between;
 }
 
-.header_auth a {
+.header_link{
     font-size: $header_link_fontsize;
     font-family: $gotham_bold;
-    color: $header_link_color;
+    color: $text_light_color;
     text-transform: uppercase;
 
     &:first-of-type {

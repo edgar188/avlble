@@ -1,10 +1,6 @@
 .portfolio {
-    background-color: $portfolio_bg_color;
+    background-color: $bg_light_color;
     padding-top: $portfolio_paddingtop;
-}
-
-.portfolio_container {
-    @extend .project_container;
 }
 
 .portfolio_items_container {
@@ -21,6 +17,13 @@
     @include project_width($portfolio_item_width, $portfolio_item_maxwidth);
     margin-bottom: 140px;
     margin-right: 20px;
+
+    &:hover {
+        .roll_over {
+            visibility: visible;
+            opacity: 0.8;
+        }
+    }
 }
 
 .portfolio_item_pict_cont {
@@ -40,7 +43,7 @@
 .portfolio_title {
     text-transform: uppercase;
     font-size: $portfolio_title_fontsize;
-    color: $portfolio_title_color;
+    color: $text_primary_color;
     margin: 47px 0 20px;
 }
 
@@ -48,18 +51,18 @@
     font-size: $portfolio_desc_fontsize;
     font-family: $gotham_book;
     line-height: $portfolio_desc_lineheight;
-    color: $portfolio_desc_color;
+    color: $text_muted_color;
 }
 
 .roll_over {
-    background-color: $portfolio_roll_over_bg_color;
+    background-color: $bg_primary_color;
     position: absolute;
     width: 100%;
     bottom: 4px;
     opacity: 0;
     visibility: hidden;
     transition: $portfolio_transition_time;
-    color: $portfolio_roll_over_color;
+    color: $text_light_color;
     font-size: $portfolio_roll_over_fontsize;
 
     .roll_content_container {
@@ -70,12 +73,12 @@
         float: left;
 
         &:hover {
-            color: $blue_color;
+            color: $text_secondary_color;
             cursor: $second_cursor;
         }
 
         &:active {
-            color: $yellow_color;
+            color: $text_custom_color;
         }
     }
 

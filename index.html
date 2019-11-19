@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <script src="./OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js" type="text/javascript"></script>
     <script async defer src="./OwlCarousel2-2.3.4/dist/owl.carousel.js" type="text/javascript"></script>
-    <script src="./js/script.js"></script>
+    <script async defer src="./js/script.js"></script>
     <title>Avlble</title>
 </head>
 
@@ -18,36 +18,36 @@
     <main>
         <!------------------------------- Header ---------------------------------------->
         <header>
-            <div class="header_container">
+            <div class="container header_cont">
                 <div>
                     <a href="#">
                         <img src="./images/header/avlble-logo.png" class="header_logo" alt="Avlble-logo" />
                     </a>
                 </div>
                 <div class="header_auth">
-                    <a href="#">Login</a>
-                    <a href="#">Signup</a>
+                    <a class="header_link" href="#">Login</a>
+                    <a class="header_link" href="#">Signup</a>
                 </div>
             </div>
         </header>
         <!---------------------------------- Bar ---------------------------------------->
         <section class="bar">
-            <div class="bar_container">
+            <div class="container">
                 <form class="bar_form">
-                    <div class="bar_search_container">
-                        <input class="bar_search" placeholder="name, skill, keyword" />
+                    <div class="search_container">
+                        <input class="primary_field" placeholder="name, skill, keyword" />
                     </div>
-                    <div class="bar_date_container">
-                        <span class="bar_date_text">Start</span>
+                    <div class="date_container">
+                        <input placeholder="start" class="primary_field" disabled />
                         <i class="icon-calendar"></i>
                     </div>
-                    <div class="bar_date_container">
-                        <span class="bar_date_text">End</span>
+                    <div class="date_container">
+                        <input placeholder="end" class="primary_field" disabled />
                         <i class="icon-calendar"></i>
-                    </div>
+                    </div>                 
                     <div>
-                        <button class="custom_btn">Find Talent</button>
-                    </div>
+                        <button class="primary_btn">Find Talent</button>
+                    </div> 
                 </form>
             </div>
         </section>
@@ -79,14 +79,12 @@
         </section>
         <!------------------------------- Portfolio ------------------------------------->
         <section class="portfolio">
-            <div class="portfolio_container">
+            <div class="container">
                 <div class="head_container">
-                    <h2>Featured portfolios</h2>
+                    <h2 class="head">Featured portfolios</h2>
                 </div>
                 <div class="portfolio_items_container">
-                    <div class="portfolio_item" 
-                        onmouseover="onRollHandler(true, this)"
-                        onmouseout="onRollHandler(false, this)">
+                    <div class="portfolio_item">
                         <div class="portfolio_item_pict_cont" >
                             <a href="#">
                                 <img class="portfolio_picture" src="./images/portfolio/_Clip Group_1.jpg" alt="_Clip Group_1" />
@@ -139,9 +137,7 @@
                         <p class="portfolio_desc">Motion Graphics Designer</p>
                     </div>
 
-                    <div class="portfolio_item" 
-                        onmouseover="onRollHandler(true, this)"
-                        onmouseout="onRollHandler(false, this)">
+                    <div class="portfolio_item">
                         <div class="portfolio_item_pict_cont" >
                             <a href="#">
                                 <img class="portfolio_picture" src="./images/portfolio/_Clip Group_2.jpg" alt="_Clip Group_2" />
@@ -195,10 +191,8 @@
                         <p class="portfolio_desc">Motion Graphics Designer </p>
                     </div>
 
-                    <div class="portfolio_item" 
-                        onmouseover="onRollHandler(true, this)"
-                        onmouseout="onRollHandler(false, this)">
-                            <div class="portfolio_item_pict_cont" >
+                    <div class="portfolio_item">
+                        <div class="portfolio_item_pict_cont" >
                             <a href="#">
                                 <img class="portfolio_picture" src="./images/portfolio/_Clip Group_3.jpg" alt="_Clip Group_3" />
                             </a>
@@ -250,9 +244,7 @@
                         <p class="portfolio_desc">Motion Graphics Designer </p>
                     </div>
 
-                    <div class="portfolio_item" 
-                        onmouseover="onRollHandler(true, this)"
-                        onmouseout="onRollHandler(false, this)">
+                    <div class="portfolio_item">
                         <div class="portfolio_item_pict_cont" >
                             <a href="#">
                                 <img class="portfolio_picture" src="./images/portfolio/_Clip Group_4.jpg" alt="_Clip Group_4" />
@@ -305,9 +297,7 @@
                         <p class="portfolio_desc">Motion Graphics Designer </p>
                     </div>
 
-                    <div class="portfolio_item" 
-                        onmouseover="onRollHandler(true, this)"
-                        onmouseout="onRollHandler(false, this)">
+                    <div class="portfolio_item">
                         <div class="portfolio_item_pict_cont">
                             <a href="#">
                                 <img class="portfolio_picture" src="./images/portfolio/_Clip Group_5.jpg" alt="_Clip Group_5" />
@@ -360,9 +350,7 @@
                         <p class="portfolio_desc">Motion Graphics Designer </p>
                     </div>
 
-                    <div class="portfolio_item" 
-                        onmouseover="onRollHandler(true, this)"
-                        onmouseout="onRollHandler(false, this)">
+                    <div class="portfolio_item">
                         <div class="portfolio_item_pict_cont">
                             <a href="#">
                                 <img class="portfolio_picture" src="./images/portfolio/_Clip Group_6.jpg" alt="_Clip Group_6" />
@@ -415,9 +403,7 @@
                         <p class="portfolio_desc">Motion Graphics Designer </p>
                     </div>
 
-                    <div class="portfolio_item" 
-                        onmouseover="onRollHandler(true, this)"
-                        onmouseout="onRollHandler(false, this)">
+                    <div class="portfolio_item">
                         <div class="portfolio_item_pict_cont">
                             <a href="#">
                                 <img class="portfolio_picture" src="./images/portfolio/_Clip Group_7.jpg" alt="_Clip Group_7" />
@@ -470,9 +456,7 @@
                         <p class="portfolio_desc">Motion Graphics Designer </p>
                     </div>
 
-                    <div class="portfolio_item" 
-                        onmouseover="onRollHandler(true, this)"
-                        onmouseout="onRollHandler(false, this)">
+                    <div class="portfolio_item">
                         <div class="portfolio_item_pict_cont">
                             <a href="#">
                                 <img class="portfolio_picture" src="./images/portfolio/_Clip Group_8.jpg" alt="_Clip Group_8" />
@@ -527,85 +511,93 @@
                 </div>
             </div>
         </section>
-        <!------------------------------- Subscribe ------------------------------------>
+        <!------------------------------- Subscribe ------------------------------------->
         <section class="subscribe">
-            <div class="subscribe_container">
-                <div class="subscribe_content">
-                    <a href="#" class="subscribe_content_link">
-                        <i class="icon-twitter"></i>
-                    </a>
-                    <a href="#" class="subscribe_content_link">
-                        <i class="icon-google-plus"></i>
-                    </a>
-                    <a href="#" class="subscribe_content_link">
-                        <i class="icon-facebook"></i>
-                    </a>
-                    <a href="#" class="subscribe_content_link">
-                        <i class="icon-linkedin"></i>
-                    </a>
-                </div>
+            <div class="container">
+                <ul class="list_container">
+                    <li class="list_item">
+                        <a href="#" class="subscribe_content_link">
+                            <i class="icon-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="subscribe_content_link">
+                            <i class="icon-google-plus"></i>
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="subscribe_content_link">
+                            <i class="icon-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="subscribe_content_link">
+                            <i class="icon-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
         <!--------------------------------- Footer -------------------------------------->
         <footer>
-            <div class="footer_container">
+            <div class="container">
                 <div class="footer_content">
-                    <div class="footer_column">
-                        <p class="footer_parag">
-                            <a href="# class="footer_link"">
-                                <img src="./images/header/_Group_.png" />
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">
+                                <img src="./images/header/_Group_.png" class="footer_img" alt=""/>
                             </a>
-                        </p>
-                        <p sty class="footer_parag"le="width: 100%;">
-                            <a href="" class="footer_link">why ?</a>
-                        </p>
-                        <p class="footer_parag">
-                            <a href="" class="footer_link">about</a>
-                        </p>
-                        <p class="footer_parag">
-                            <a href="" class="footer_link">help</a>
-                        </p>
-                        <p class="footer_parag">
-                            <a href="" class="footer_link">contact</a>
-                        </p>
-                        <p class="footer_parag">
-                            <a href="" class="footer_link">term</a>
-                        </p>
-                        <p class="footer_parag">
-                            <a href="" class="footer_link">privacy</a>
-                        </p>
-                    </div>
-                    <div class="footer_column">
-                        <p class="footer_parag">
-                            <a href="" class="footer_link">community</a>
-                        </p>
-                        <p class="footer_parag">
-                            <a href="" class="footer_link">blog</a>
-                        </p>
-                        <p class="footer_parag">
-                            <a href="" class="footer_link">newsletter</a>
-                        </p>
-                        <p class="footer_parag">
-                            <a href="" class="footer_link">testimonials</a>
-                        </p>
-                    </div>
-                    <div class="footer_column">
-                        <p class="footer_parag">
-                            <a href="" class="footer_link">connect</a>
-                        </p>
-                        <p class="footer_parag">
-                            <a href="" class="footer_link">find Designers</a>
-                        </p>
-                        <p class="footer_parag">
-                            <a href="" class="footer_link">jobs for Designers</a>
-                        </p>
-                        <p class="footer_parag">
-                            <a href="" class="footer_link">advertise</a>
-                        </p>
-                        <p class="footer_parag">
-                            <a href="" class="footer_link">feedback</a>
-                        </p>
-                    </div>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">why ?</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">about</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">help</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">contact</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">term</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">privacy</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">community</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">blog</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">newsletter</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">testimonials</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">connect</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">find Designers</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">jobs for Designers</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">advertise</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">feedback</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>

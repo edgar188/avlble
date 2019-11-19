@@ -2,7 +2,7 @@
     padding-top: $slider_padding_top;
     height:$slider_item_height;
     background-image: url("../images/slider/CbVbCs.jpg");
-    background-color: $slider_bg_color;
+    background-color: $bg_secondary_color;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -14,7 +14,7 @@
 }
 
 .slider_text {
-    color: $slider_text_color;
+    color: $text_light_color;
     font-size: $slider_text_fontsize;
     max-height: $slider_text_container_maxheight;
     overflow: hidden;

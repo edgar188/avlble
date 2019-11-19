@@ -1,10 +1,6 @@
 footer {
     margin: $footer_margin_top 0 $footer_margin_bottom;
-    background-color: $footer_bg_color;
-}
-
-.footer_container {
-    @extend .project_container;
+    background-color: $bg_light_color;
 }
 
 .footer_content {
@@ -13,20 +9,20 @@ footer {
     @include flex_align_items_mix($to: baseline);
     justify-content: space-between;
     font-size: $footer_content_fontsize;
-    line-height: $footer_content_lineheight;
 }
 
-.footer_column {
+.footer_list {
     max-width: $footer_column_maxwidth;
 }
 
-.footer_parag {
-    @extend .ellipsis;
+.footer_item {
+    overflow: hidden;
     text-transform: capitalize;
+    padding: 10px 0;
 }
 
 .footer_link {
-    color: $footer_link_color;
+    color: $bg_primary_color;
 }
 
 

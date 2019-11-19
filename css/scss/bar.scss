@@ -1,10 +1,6 @@
 .bar {
-    background-color: $bar_bg_color;
+    background-color: $bg_secondary_color;
     padding: $bar_padding;
-}
-
-.bar_container {
-    @extend .project_container;
 }
 
 .bar_form {
@@ -16,42 +12,81 @@
     }
 }
 
-.bar_search_container {
+// .bar_search_container {
+//     @extend .project_half_container;
+// }
+
+// .bar_search {
+//     @extend .ellipsis;
+//     width: $bar_search_width;
+//     font-size: $bar_text_fontsize;
+//     border: none;
+//     text-indent: $bar_search_textindent;
+//     padding: $bar_search_padding;
+//     color: $blue_color;
+//     &::placeholder {
+//         color: $blue_color;
+//         text-transform: uppercase;
+//         font-family: $gotham_medium;
+//     }
+// }
+
+// .bar_date_container {
+//     padding: 0;
+//     background-color: $bar_field_bg_color;
+//     position: relative;
+//     cursor: $second_cursor;
+// }
+
+// input.date_field {
+//     font-size: $bar_text_fontsize;
+//     border: none;
+//     text-indent: $bar_search_textindent;
+//     padding: $bar_search_padding;
+//     color: $blue_color;
+//     padding: 5px 0;
+//     &::placeholder {
+//         color: $blue_color;
+//         text-transform: uppercase;
+//         font-family: $gotham_medium;
+//     }
+// }
+
+// .bar_date_text {
+//     float: left;
+//     font-size: $bar_text_fontsize;
+//     color: $blue_color;
+//     margin: $bar_date_text_margin;
+// }
+// i.icon-calendar {
+    // font-size: $bar_icon_fontsize;
+    // color: $bar_icon_color;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+// }
+
+// .custom_btn {
+//     @include button_mixin($bar_text_fontsize, 21px, $bar_field_bg_color, $blue_color);
+// }
+
+.search_container {
     @extend .project_half_container;
+    min-width: 160px;
 }
 
-.bar_search {
-    @extend .ellipsis;
-    width: $bar_search_width;
-    font-size: $bar_text_fontsize;
-    border: none;
-    text-indent: $bar_search_textindent;
-    padding: $bar_search_padding;
-    color: $blue_color;
-    &::placeholder {
-        color: $blue_color;
-        text-transform: uppercase;
-        font-family: $gotham_medium;
-    }
+.date_container {
+    width: 5%;
+    min-width: 150px;
+    position: relative;
 }
 
-.bar_date_container {
-    padding: $bar_date_container_padding;
-    background-color: $bar_field_bg_color;
-    cursor: $second_cursor;
-}
-
-.bar_date_text {
-    float: left;
-    font-size: $bar_text_fontsize;
-    color: $blue_color;
-    margin: $bar_date_text_margin;
-}
 i.icon-calendar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
     font-size: $bar_icon_fontsize;
-    color: $bar_icon_color;
+    color: $text_icon_color;
 }
 
-.custom_btn {
-    @include button_mixin($bar_text_fontsize, 21px, $bar_field_bg_color, $blue_color);
-}

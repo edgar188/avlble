@@ -5,7 +5,7 @@
         padding: 35px 0;
     }
 
-    .header_auth a {
+    .header_link {
         font-size: round($header_link_fontsize * $multiply_size_laptop_large);
     }
 
@@ -19,18 +19,18 @@
         padding: 10px 0;
     }
 
-    .bar_search_container {
-        width: 46%;
+    .search_container {
+        width: 40%;
     }
-
-    .bar_search {
-        padding: 13px;
+    
+    .primary_field {
+        padding: 10px;
         font-size: round($bar_text_fontsize * $multiply_size_laptop_large);
-        text-indent: round($bar_search_textindent * $multiply_size_laptop_large);
     }
 
-    .bar_date_container {
-        padding: 4.5px 15px;
+    .primary_btn {
+        padding: 11px;
+        font-size: round($bar_text_fontsize * $multiply_size_laptop_large);
     }
 
     .bar_date_text {
@@ -40,13 +40,8 @@
 
     i.icon-calendar {
         font-size: round($bar_icon_fontsize * $multiply_size_laptop_large);
-        
     }
     
-    .custom_btn {
-        @include button_mixin(round($bar_text_fontsize * $multiply_size_laptop_large), 14px, $bar_field_bg_color, $blue_color);
-    }
-
     // ---------------------------------- Slider -----------------------------------------
 
     .slider .item {
@@ -61,14 +56,12 @@
 
     // ----------------------------------- Portfolio --------------------------------------
 
-    .project_head_container {
-        h2 {
-            font-size: round($head_fontsize * $multiply_size_laptop_large);
-        }
+    .head {
+        font-size: round($head_fontsize * $multiply_size_laptop_large);
     }
     
     .portfolio_item {
-        max-width: 45%;
+        max-width: 30%;
         margin-bottom: 140px;
         margin-right: none;
     }
@@ -110,11 +103,8 @@
         padding: 10px 0;
     }
 
-    .subscribe_content {
+    .list_item {
         font-size: round($subscribe_content_fontsize * $multiply_size_laptop_large);
-    }
-
-    .subscribe_content_link {
         margin-right: 15px;
     }
 
@@ -122,26 +112,37 @@
 
     .footer_content {
         font-size: round($footer_content_fontsize * $multiply_size_laptop_large);
-        line-height: round($footer_content_lineheight * $multiply_size_laptop_large);
     }
     
-    .footer_column {
+    .footer_list {
         max-width: $footer_column_maxwidth;
     }
 
-    .footer_parag img {
+    .footer_img {
         width: round(163px * $multiply_size_laptop_large);
+    }
+
+    .footer_item {
+        padding: 8px 0;
+    }
+    
+}
+
+@media (max-width: $laptop_medium) {
+    .portfolio_item {
+        max-width: 40%;
     }
 }
 
 @media (max-width: $laptop) {
+
     // ----------------------------------- Header -------------------------------------
 
     header {
         padding: 30px 0;
     }
 
-    .header_auth a {
+    .header_link {
         font-size: round($header_link_fontsize * $multiply_size_laptop);
     }
 
@@ -151,23 +152,13 @@
 
     // -------------------------------- Top bar ----------------------------------------
 
-    .bar_search_container {
+    .search_container {
         width: 36%;
     }
 
-    .bar_search {
-        padding: 8px;
+    .primary_field {
+        padding: 6px;
         font-size: round($bar_text_fontsize * $multiply_size_laptop);
-        text-indent: round($bar_search_textindent * $multiply_size_laptop);
-    }
-
-    .bar_date_container {
-        padding: 1px 5px;
-    }
-
-    .bar_date_text {
-        font-size: round($bar_text_fontsize * $multiply_size_laptop);
-        margin: 7px 20px 0 0;
     }
 
     i.icon-calendar {
@@ -175,8 +166,14 @@
         
     }
     
-    .custom_btn {
-        @include button_mixin(round($bar_text_fontsize * $multiply_size_laptop), 8px 8px 9px, $bar_field_bg_color, $blue_color);
+    .date_container {
+        min-width: 90px;
+    }
+
+    .primary_btn {
+        padding: 7px;
+        font-size: round($bar_text_fontsize * $multiply_size_laptop);
+        min-width: 90px;
     }
 
     // ---------------------------------- Slider -----------------------------------------
@@ -188,7 +185,7 @@
 
     .slider_text {
         font-size: round($slider_text_fontsize * $multiply_size_laptop);
-        max-height: round($slider_text_container_maxheight * $multiply_size_laptop - 128);
+        max-height: round($slider_text_container_maxheight * $multiply_size_laptop - 138);
     }
 
     // ----------------------------------- Portfolio --------------------------------------
@@ -218,8 +215,12 @@
         }
    }
 
+   .roll_over .roll_count {
+        margin: 5px;
+    }
+
    .roll_over .bottom_content .bottom_content_text {
-        max-height: 22px;
+        max-height: 19px;
     }
 
    .roll_over .follow_container i.icon-add.follow {
@@ -242,11 +243,8 @@
         margin-top: round($subscribe_margin_top * $multiply_size_laptop);
     }
 
-    .subscribe_content {
+    .list_item {
         font-size: round($subscribe_content_fontsize * $multiply_size_laptop);
-    }
-
-    .subscribe_content_link {
         margin-right: 10px;
     }
 
@@ -259,14 +257,13 @@
 
     .footer_content {
         font-size: round($footer_content_fontsize * $multiply_size_laptop);
-        line-height: round($footer_content_lineheight * $multiply_size_laptop);
     }
     
     .footer_column {
         max-width: $footer_column_maxwidth;
     }
 
-    .footer_parag img {
+    .footer_img{
         width: round(163px * $multiply_size_laptop);
     }
 }
@@ -278,10 +275,10 @@
         padding: 20px 0;
     }
 
-    .header_auth a {
+    .header_link {
         font-size: round($header_link_fontsize * $multiply_size_tablet);
         &:first-of-type {
-            margin-right: 15px;
+            margin-right: 10px;
         }
     }
 
@@ -295,10 +292,8 @@
         width: 27%;
     }
 
-    .bar_search {
-        padding: 10px 0 11px;
+    .primary_field {
         font-size: round($bar_text_fontsize * $multiply_size_tablet);
-        text-indent: round($bar_search_textindent * $multiply_size_tablet);
     }
 
     .bar_date_container {
@@ -315,8 +310,8 @@
         
     }
     
-    .custom_btn {
-        @include button_mixin(round($bar_text_fontsize * $multiply_size_tablet), 11px 8px 11px, $bar_field_bg_color, $blue_color);
+    .primary_btn {
+        @include button_mixin(round($bar_text_fontsize * $multiply_size_tablet), 11px 8px 11px, $bg_light_color, $text_secondary_color);
     }
 
     // ---------------------------------- Slider -----------------------------------------
@@ -371,6 +366,10 @@
             margin-top: 15px;
             margin-bottom: 15px;
         }
+    }
+
+    .roll_over .roll_count {
+        margin: 5px;
     }
 
     .roll_over .bottom_content .bottom_content_text {
@@ -466,8 +465,8 @@
         
     }
     
-    .custom_btn {
-        @include button_mixin(round($bar_text_fontsize * $multiply_size_mobile_large), 6px 5px 5px, $bar_field_bg_color, $blue_color);
+    .primary_btn {
+        @include button_mixin(round($bar_text_fontsize * $multiply_size_mobile_large), 6px 5px 5px, $bg_light_color, $text_secondary_color);
     }
 
     // ---------------------------------- Slider -----------------------------------------
@@ -589,8 +588,8 @@
         font-size: round($bar_icon_fontsize * $multiply_size_mobile);
     }
     
-    .custom_btn {
-        @include button_mixin(round($bar_text_fontsize * $multiply_size_mobile), 8px 5px, $bar_field_bg_color, $blue_color);
+    .primary_btn {
+        @include button_mixin(round($bar_text_fontsize * $multiply_size_mobile), 8px 5px, $bg_light_color, $text_secondary_color);
     }
 
     // ---------------------------------- Slider -----------------------------------------

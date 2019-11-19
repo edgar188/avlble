@@ -11,13 +11,3 @@ $(document).ready(function () {
         items : 1,
     });
 });
-
-// Portfolios on roll handler
-function onRollHandler(boolean, target) {
-    var rollOverNode = target.children[0].children[1];
-    if(boolean) {
-        rollOverNode.setAttribute("style", `visibility: visible; opacity: 0.8;`);
-    } else {
-        rollOverNode.setAttribute("style", `visibility: hidden; opacity: 0;`);
-    }
-}

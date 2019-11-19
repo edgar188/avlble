@@ -9,7 +9,7 @@
         './scss/portfolio',
         './scss/subscribe',
         './scss/footer',
-        './scss/media-queries';
+        './scss/media-queries.scss';
 
 * {
     padding: 0;
@@ -39,6 +39,6 @@ ul {
 }
 
 main {
-    font-family: $gotham_medium, Arial, Helvetica, sans-serif;
+    font-family: $gotham_medium;
 }
 

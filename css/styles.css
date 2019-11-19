@@ -1,18 +1,17 @@
 @import './fonts/font-icons/style.css';
 @import './fonts/Gotham-Font/style.css';
-.ellipsis, .footer_parag, .portfolio_title, .portfolio_desc, .bar_search, .project_head_container h2, .head_container h2 {
+.ellipsis, .portfolio_title, .portfolio_desc, .head {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.project_container, .footer_container, .subscribe_container, .portfolio_container, .bar_container, .header_container {
+.container {
   width: 82%;
-  max-width: 100%;
   margin: 0 auto;
 }
 
-.project_half_container, .slider_text_container, .bar_search_container {
+.project_half_container, .slider_text_container, .search_container {
   width: 50%;
   max-width: 1250px;
 }
@@ -20,10 +19,35 @@
 .project_head_container, .head_container {
   margin-bottom: 60px;
 }
-.project_head_container h2, .head_container h2 {
+
+.head {
   font-size: 50px;
   font-family: "GothamMedium", sans-serif;
-  color: head_color;
+  color: #333;
+}
+
+.primary_field {
+  width: 100%;
+  padding: 13px;
+  font-size: 25px;
+  border: none;
+  background-color: #fff;
+  color: #3ba2d4;
+}
+.primary_field::placeholder {
+  color: #3ba2d4;
+  text-transform: uppercase;
+  font-family: "GothamMedium", sans-serif;
+}
+
+.primary_btn {
+  font-size: 25px;
+  font-family: "GothamMedium", sans-serif;
+  padding: 14px;
+  background-color: #fff;
+  color: #3ba2d4;
+  border: none;
+  min-width: 170px;
 }
 
 header {
@@ -31,7 +55,7 @@ header {
   padding: 53px 0;
 }
 
-.header_container {
+.header_cont {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -45,13 +69,13 @@ header {
   justify-content: space-between;
 }
 
-.header_auth a {
+.header_link {
   font-size: 36px;
   font-family: "GothamBold", "GothamMedium", sans-serif;
   color: #fff;
   text-transform: uppercase;
 }
-.header_auth a:first-of-type {
+.header_link:first-of-type {
   margin-right: 40px;
 }
 
@@ -76,52 +100,30 @@ header {
   margin-right: 8px;
 }
 
-.bar_search {
-  width: 100%;
-  font-size: 25px;
-  border: none;
-  text-indent: 20px;
-  padding: 20px 0;
-  color: #3ba2d4;
-}
-.bar_search::placeholder {
-  color: #3ba2d4;
-  text-transform: uppercase;
-  font-family: "GothamMedium", sans-serif;
+.search_container {
+  min-width: 160px;
 }
 
-.bar_date_container {
-  padding: 10px;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-.bar_date_text {
-  float: left;
-  font-size: 25px;
-  color: #3ba2d4;
-  margin: 12px 20px 0 0;
+.date_container {
+  width: 5%;
+  min-width: 150px;
+  position: relative;
 }
 
 i.icon-calendar {
-  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  font-size: 40px;
   color: #929497;
-}
-
-.custom_btn {
-  font-size: 25px;
-  font-family: "GothamMedium", sans-serif;
-  padding: 21px;
-  background-color: #fff;
-  color: #3ba2d4;
-  border: none;
 }
 
 .slider .item {
   padding-top: 90px;
   height: 950px;
   background-image: url("../images/slider/CbVbCs.jpg");
-  background-color: #9FA2A9;
+  background-color: #77787a;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -171,6 +173,10 @@ i.icon-calendar {
   max-width: 585px;
   margin-bottom: 140px;
   margin-right: 20px;
+}
+.portfolio_item:hover .roll_over {
+  visibility: visible;
+  opacity: 0.8;
 }
 
 .portfolio_item_pict_cont {
@@ -283,9 +289,20 @@ i.icon-calendar {
   font-size: 67px;
 }
 
+.list_container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.list_item {
+  float: left;
+  font-size: 67px;
+  margin-right: 30px;
+}
+
 .subscribe_content_link {
   color: #3ba2d4;
-  margin-right: 30px;
 }
 
 footer {
@@ -308,27 +325,28 @@ footer {
   align-items: baseline;
   justify-content: space-between;
   font-size: 30px;
-  line-height: 62px;
 }
 
-.footer_column {
+.footer_list {
   max-width: 25%;
 }
 
-.footer_parag {
+.footer_item {
+  overflow: hidden;
   text-transform: capitalize;
+  padding: 10px 0;
 }
 
 .footer_link {
   color: #333;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1920px) {
   header {
     padding: 35px 0;
   }
 
-  .header_auth a {
+  .header_link {
     font-size: 29px;
   }
 
@@ -340,18 +358,18 @@ footer {
     padding: 10px 0;
   }
 
-  .bar_search_container {
-    width: 46%;
+  .search_container {
+    width: 40%;
   }
 
-  .bar_search {
-    padding: 13px;
+  .primary_field {
+    padding: 10px;
     font-size: 20px;
-    text-indent: 16px;
   }
 
-  .bar_date_container {
-    padding: 4.5px 15px;
+  .primary_btn {
+    padding: 11px;
+    font-size: 20px;
   }
 
   .bar_date_text {
@@ -360,16 +378,7 @@ footer {
   }
 
   i.icon-calendar {
-    font-size: 40px;
-  }
-
-  .custom_btn {
-    font-size: 20px;
-    font-family: "GothamMedium", sans-serif;
-    padding: 14px;
-    background-color: #fff;
-    color: #3ba2d4;
-    border: none;
+    font-size: 32px;
   }
 
   .slider .item {
@@ -382,12 +391,12 @@ footer {
     max-height: 384px;
   }
 
-  .project_head_container h2, .head_container h2 {
+  .head {
     font-size: 40px;
   }
 
   .portfolio_item {
-    max-width: 45%;
+    max-width: 30%;
     margin-bottom: 140px;
     margin-right: none;
   }
@@ -426,25 +435,30 @@ footer {
     padding: 10px 0;
   }
 
-  .subscribe_content {
+  .list_item {
     font-size: 54px;
-  }
-
-  .subscribe_content_link {
     margin-right: 15px;
   }
 
   .footer_content {
     font-size: 24px;
-    line-height: 50px;
   }
 
-  .footer_column {
+  .footer_list {
     max-width: 25%;
   }
 
-  .footer_parag img {
+  .footer_img {
     width: 130px;
+  }
+
+  .footer_item {
+    padding: 8px 0;
+  }
+}
+@media (max-width: 1440px) {
+  .portfolio_item {
+    max-width: 40%;
   }
 }
 @media (max-width: 992px) {
@@ -452,174 +466,35 @@ footer {
     padding: 30px 0;
   }
 
-  .header_auth a {
-    font-size: 22px;
+  .header_link {
+    font-size: 18px;
   }
 
   .header_logo {
-    width: 196px;
+    width: 164px;
   }
 
-  .bar_search_container {
+  .search_container {
     width: 36%;
   }
 
-  .bar_search {
-    padding: 8px;
-    font-size: 15px;
-    text-indent: 12px;
-  }
-
-  .bar_date_container {
-    padding: 1px 5px;
-  }
-
-  .bar_date_text {
-    font-size: 15px;
-    margin: 7px 20px 0 0;
+  .primary_field {
+    padding: 6px;
+    font-size: 13px;
   }
 
   i.icon-calendar {
-    font-size: 30px;
-  }
-
-  .custom_btn {
-    font-size: 15px;
-    font-family: "GothamMedium", sans-serif;
-    padding: 8px 8px 9px;
-    background-color: #fff;
-    color: #3ba2d4;
-    border: none;
-  }
-
-  .slider .item {
-    padding-top: 54px;
-    height: 570px;
-  }
-
-  .slider_text {
-    font-size: 37px;
-    max-height: 160px;
-  }
-
-  .portfolio {
-    padding-top: 90px;
-  }
-
-  .project_head_container, .head_container {
-    margin-bottom: 36px;
-  }
-
-  .project_head_container h2, .head_container h2 {
-    font-size: 30px;
-  }
-
-  .portfolio_item {
-    margin-bottom: 100px;
-  }
-
-  .roll_over {
-    font-size: 10px;
-  }
-  .roll_over .bottom_content {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .roll_over .bottom_content .bottom_content_text {
-    max-height: 22px;
-  }
-
-  .roll_over .follow_container i.icon-add.follow {
-    font-size: 14px;
-  }
-
-  .portfolio_title {
     font-size: 20px;
-    margin: 15px 0;
   }
 
-  .portfolio_desc {
-    font-size: 18px;
-    line-height: 20px;
+  .date_container {
+    min-width: 90px;
   }
 
-  .subscribe {
-    margin-top: 54px;
-  }
-
-  .subscribe_content {
-    font-size: 40px;
-  }
-
-  .subscribe_content_link {
-    margin-right: 10px;
-  }
-
-  footer {
-    margin-top: 60px;
-    margin-bottom: 108px;
-  }
-
-  .footer_content {
-    font-size: 18px;
-    line-height: 37px;
-  }
-
-  .footer_column {
-    max-width: 25%;
-  }
-
-  .footer_parag img {
-    width: 98px;
-  }
-}
-@media (max-width: 600px) {
-  header {
-    padding: 20px 0;
-  }
-
-  .header_auth a {
-    font-size: 18px;
-  }
-  .header_auth a:first-of-type {
-    margin-right: 15px;
-  }
-
-  .header_logo {
-    width: 109px;
-  }
-
-  .bar_search_container {
-    width: 27%;
-  }
-
-  .bar_search {
-    padding: 10px 0 11px;
+  .primary_btn {
+    padding: 7px;
     font-size: 13px;
-    text-indent: 10px;
-  }
-
-  .bar_date_container {
-    padding: 5px 5px;
-  }
-
-  .bar_date_text {
-    font-size: 13px;
-    margin: 5px 5px 0 0;
-  }
-
-  i.icon-calendar {
-    font-size: 25px;
-  }
-
-  .custom_btn {
-    font-size: 13px;
-    font-family: "GothamMedium", sans-serif;
-    padding: 11px 8px 11px;
-    background-color: #fff;
-    color: #3ba2d4;
-    border: none;
+    min-width: 90px;
   }
 
   .slider .item {
@@ -629,7 +504,135 @@ footer {
 
   .slider_text {
     font-size: 31px;
-    max-height: 130px;
+    max-height: 102px;
+  }
+
+  .portfolio {
+    padding-top: 75px;
+  }
+
+  .project_head_container, .head_container {
+    margin-bottom: 30px;
+  }
+
+  .project_head_container h2, .head_container h2 {
+    font-size: 25px;
+  }
+
+  .portfolio_item {
+    margin-bottom: 100px;
+  }
+
+  .roll_over {
+    font-size: 9px;
+  }
+  .roll_over .bottom_content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .roll_over .roll_count {
+    margin: 5px;
+  }
+
+  .roll_over .bottom_content .bottom_content_text {
+    max-height: 19px;
+  }
+
+  .roll_over .follow_container i.icon-add.follow {
+    font-size: 12px;
+  }
+
+  .portfolio_title {
+    font-size: 17px;
+    margin: 15px 0;
+  }
+
+  .portfolio_desc {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .subscribe {
+    margin-top: 45px;
+  }
+
+  .list_item {
+    font-size: 34px;
+    margin-right: 10px;
+  }
+
+  footer {
+    margin-top: 50px;
+    margin-bottom: 90px;
+  }
+
+  .footer_content {
+    font-size: 15px;
+  }
+
+  .footer_column {
+    max-width: 25%;
+  }
+
+  .footer_img {
+    width: 82px;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    padding: 20px 0;
+  }
+
+  .header_link {
+    font-size: 14px;
+  }
+  .header_link:first-of-type {
+    margin-right: 10px;
+  }
+
+  .header_logo {
+    width: 87px;
+  }
+
+  .bar_search_container {
+    width: 27%;
+  }
+
+  .primary_field {
+    font-size: 10px;
+  }
+
+  .bar_date_container {
+    padding: 5px 5px;
+  }
+
+  .bar_date_text {
+    font-size: 10px;
+    margin: 5px 5px 0 0;
+  }
+
+  i.icon-calendar {
+    font-size: 16px;
+  }
+
+  .primary_btn {
+    font-size: 10px;
+    font-family: "GothamMedium", sans-serif;
+    padding: 11px 8px 11px;
+    background-color: #fff;
+    color: #3ba2d4;
+    border: none;
+  }
+
+  .slider .item {
+    padding-top: 36px;
+    height: 380px;
+  }
+
+  .slider_text {
+    font-size: 25px;
+    max-height: 82px;
   }
 
   .owl-theme .owl-dots {
@@ -642,7 +645,7 @@ footer {
   }
 
   .portfolio {
-    padding-top: 75px;
+    padding-top: 60px;
   }
 
   .project_head_container, .head_container {
@@ -650,7 +653,7 @@ footer {
   }
 
   .project_head_container h2, .head_container h2 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .portfolio_items_container {
@@ -664,11 +667,15 @@ footer {
   }
 
   .roll_over {
-    font-size: 9px;
+    font-size: 7px;
   }
   .roll_over .bottom_content {
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+
+  .roll_over .roll_count {
+    margin: 5px;
   }
 
   .roll_over .bottom_content .bottom_content_text {
@@ -676,25 +683,25 @@ footer {
   }
 
   .roll_over .follow_container i.icon-add.follow {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .portfolio_title {
-    font-size: 17px;
+    font-size: 13px;
     margin: 10px 0;
   }
 
   .portfolio_desc {
-    font-size: 15px;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 13px;
   }
 
   .subscribe {
-    margin-top: 45px;
+    margin-top: 36px;
   }
 
   .subscribe_content {
-    font-size: 34px;
+    font-size: 27px;
   }
 
   .subscribe_content_link {
@@ -702,18 +709,18 @@ footer {
   }
 
   footer {
-    margin-top: 50px;
-    margin-bottom: 90px;
+    margin-top: 40px;
+    margin-bottom: 72px;
   }
 
   .footer_content {
-    font-size: 15px;
-    line-height: 31px;
+    font-size: 12px;
+    line-height: 25px;
     width: 100%;
   }
 
   .footer_parag img {
-    width: 82px;
+    width: 65px;
   }
 }
 @media (max-width: 425px) {
@@ -751,10 +758,10 @@ footer {
   }
 
   i.icon-calendar {
-    font-size: 20px;
+    font-size: 16px;
   }
 
-  .custom_btn {
+  .primary_btn {
     font-size: 10px;
     font-family: "GothamMedium", sans-serif;
     padding: 6px 5px 5px;
@@ -865,10 +872,10 @@ footer {
   }
 
   i.icon-calendar {
-    font-size: 15px;
+    font-size: 12px;
   }
 
-  .custom_btn {
+  .primary_btn {
     font-size: 8px;
     font-family: "GothamMedium", sans-serif;
     padding: 8px 5px;
@@ -897,7 +904,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 a, button {
@@ -915,7 +922,7 @@ ul {
 }
 
 main {
-  font-family: "GothamMedium", sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "GothamMedium", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */
