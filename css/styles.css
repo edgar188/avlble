@@ -595,21 +595,21 @@ footer {
     width: 87px;
   }
 
-  .bar_search_container {
-    width: 27%;
+  .bar {
+    padding: 5px 0;
+  }
+
+  .search_container {
+    width: 25%;
+    min-width: fit-content;
   }
 
   .primary_field {
     font-size: 10px;
   }
 
-  .bar_date_container {
-    padding: 5px 5px;
-  }
-
-  .bar_date_text {
-    font-size: 10px;
-    margin: 5px 5px 0 0;
+  .date_container {
+    min-width: 75px;
   }
 
   i.icon-calendar {
@@ -618,11 +618,8 @@ footer {
 
   .primary_btn {
     font-size: 10px;
-    font-family: "GothamMedium", sans-serif;
-    padding: 11px 8px 11px;
-    background-color: #fff;
-    color: #3ba2d4;
-    border: none;
+    padding: 6px;
+    min-width: 70px;
   }
 
   .slider .item {

@@ -288,30 +288,31 @@
 
     // -------------------------------- Top bar ----------------------------------------
 
-    .bar_search_container {
-        width: 27%;
+    .bar {
+        padding: 5px 0;
+    }
+
+    .search_container {
+        width: 25%;
+        min-width: fit-content;
     }
 
     .primary_field {
         font-size: round($bar_text_fontsize * $multiply_size_tablet);
     }
 
-    .bar_date_container {
-        padding: 5px 5px;
-    }
-
-    .bar_date_text {
-        font-size: round($bar_text_fontsize * $multiply_size_tablet);
-        margin: 5px 5px 0 0;
+    .date_container {
+        min-width: 75px;
     }
 
     i.icon-calendar {
         font-size: round($bar_icon_fontsize * $multiply_size_tablet);
-        
     }
     
     .primary_btn {
-        @include button_mixin(round($bar_text_fontsize * $multiply_size_tablet), 11px 8px 11px, $bg_light_color, $text_secondary_color);
+        font-size: round($bar_text_fontsize * $multiply_size_tablet);
+        padding: 6px;
+        min-width: 70px;
     }
 
     // ---------------------------------- Slider -----------------------------------------
