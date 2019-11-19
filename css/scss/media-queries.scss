@@ -198,7 +198,7 @@
         margin-bottom: round($project_head_container_margin_bottom * $multiply_size_laptop);
     }
 
-    .project_head_container h2 {
+    .head {
         font-size: round($head_fontsize * $multiply_size_laptop);
     }
     
@@ -346,7 +346,7 @@
         text-align: center;
     }
 
-    .project_head_container h2 {
+    .head {
         font-size: round($head_fontsize * $multiply_size_tablet);
     }
     
@@ -367,10 +367,6 @@
             margin-top: 15px;
             margin-bottom: 15px;
         }
-    }
-
-    .roll_over .roll_count {
-        margin: 5px;
     }
 
     .roll_over .bottom_content .bottom_content_text {
@@ -397,28 +393,31 @@
         margin-top: round($subscribe_margin_top * $multiply_size_tablet);
     }
 
-    .subscribe_content {
+    .list_item {
         font-size: round($subscribe_content_fontsize * $multiply_size_tablet);
     }
 
-    .subscribe_content_link {
-        margin-right: 5px;
-    }
-
     // ---------------------------------- Footer ----------------------------------------
-
+ 
     footer {
-        margin-top: round($footer_margin_top * $multiply_size_tablet);
-        margin-bottom: round($footer_margin_bottom * $multiply_size_tablet);
+        margin-top: round($footer_margin_top * $multiply_size_laptop);
+        margin-bottom: round($footer_margin_bottom * $multiply_size_laptop);
     }
-
+   
     .footer_content {
         font-size: round($footer_content_fontsize * $multiply_size_tablet);
-        line-height: round($footer_content_lineheight * $multiply_size_tablet);
         width: 100%;
     }
-    
-    .footer_parag img {
+
+    .footer_column {
+        max-width: $footer_column_maxwidth;
+    }
+
+    .footer_item {
+        padding: 5px 0;
+    }
+
+    .footer_img{
         width: round(163px * $multiply_size_tablet);
     }
 }
@@ -427,13 +426,13 @@
      // ----------------------------------- Header ------------------------------------
 
      header {
-        padding: 15px 0;
+        padding: 10px 0;
     }
 
-    .header_auth a {
+    .header_link {
         font-size: round($header_link_fontsize * $multiply_size_mobile_large);
         &:first-of-type {
-            margin-right: 15px;
+            margin-right: 10px;
         }
     }
 
@@ -444,30 +443,37 @@
     // ----------------------------------- Top Bar ------------------------------------
 
     .bar {
-        padding: 5px 0;
+        padding: 2px 0;
     }
 
-    .bar_search {
-        padding: 6px 0 5px;
+    .bar_form > div {
+        margin-right: 4px;
+    }
+
+    .search_container {
+        min-width: 80px;
+    }
+
+    .primary_field {
         font-size: round($bar_text_fontsize * $multiply_size_mobile_large);
-        text-indent: round($bar_search_textindent * $multiply_size_mobile_large);
+        padding: 4px 2px;
     }
 
-    .bar_date_container {
-        padding: 0 5px;
-    }
-
-    .bar_date_text {
-        font-size: round($bar_text_fontsize * $multiply_size_mobile_large);
+    .date_container {
+        padding: 0;
+        min-width: 45px;
     }
 
     i.icon-calendar {
         font-size: round($bar_icon_fontsize * $multiply_size_mobile_large);
-        
+        right: 3px;
+        transform: translateY(-40%);
     }
     
     .primary_btn {
-        @include button_mixin(round($bar_text_fontsize * $multiply_size_mobile_large), 6px 5px 5px, $bg_light_color, $text_secondary_color);
+        font-size: round($bar_text_fontsize * $multiply_size_mobile_large);
+        padding: 4px 0 5px;
+        min-width: 50px;
     }
 
     // ---------------------------------- Slider -----------------------------------------
@@ -479,21 +485,21 @@
 
     .slider_text {
         font-size: round($slider_text_fontsize * $multiply_size_mobile_large);
-        max-height: round($slider_text_container_maxheight * $multiply_size_mobile_large - 110);
+        max-height: round($slider_text_container_maxheight * $multiply_size_mobile_large - 100);
     }
 
-    // ----------------------------------- Portfolio --------------------------------------
+    // --------------------------------- Portfolio --------------------------------------
 
     .portfolio {
         padding-top: round($portfolio_paddingtop * $multiply_size_mobile_large);
     }
 
-    .project_head_container h2 {
-        font-size: round($head_fontsize * $multiply_size_mobile_large);
+    .head{
+        font-size: round($head_fontsize * $multiply_size_tablet);
     }
     
     .roll_over {
-        font-size: round($portfolio_roll_over_fontsize * $multiply_size_mobile_large);
+        font-size: round($portfolio_roll_over_fontsize * $multiply_size_tablet);
     }
 
     .roll_over .bottom_content .bottom_content_text {
@@ -501,7 +507,7 @@
     }
 
     .roll_over .follow_container i.icon-add.follow {
-        font-size: round($portfolio_follow_icon_fontsize * $multiply_size_mobile_large);
+        font-size: round($portfolio_follow_icon_fontsize * $multiply_size_tablet);
     }
 
     .roll_over .roll_count {
@@ -525,7 +531,7 @@
         padding: 5px 0;
     }
 
-    .subscribe_content {
+    .list_item{
         font-size: round($subscribe_content_fontsize * $multiply_size_mobile_large);
     }
 
@@ -538,10 +544,9 @@
 
     .footer_content {
         font-size: round($footer_content_fontsize * $multiply_size_mobile_large);
-        line-height: round($footer_content_lineheight * $multiply_size_mobile_large);
     }
     
-    .footer_parag img {
+    .footer_img {
         width: round(163px * $multiply_size_mobile_large);
     }
 }
@@ -549,10 +554,6 @@
 @media (max-width: $mobile) {
 
     // ------------------------------ Header ------------------------------------------
-
-    header {
-        padding: 10px 0;
-    }
 
     .header_auth a {
         font-size: round($header_link_fontsize * $multiply_size_mobile);

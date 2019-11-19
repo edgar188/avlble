@@ -515,7 +515,7 @@ footer {
     margin-bottom: 30px;
   }
 
-  .project_head_container h2, .head_container h2 {
+  .head {
     font-size: 25px;
   }
 
@@ -649,7 +649,7 @@ footer {
     text-align: center;
   }
 
-  .project_head_container h2, .head_container h2 {
+  .head {
     font-size: 20px;
   }
 
@@ -669,10 +669,6 @@ footer {
   .roll_over .bottom_content {
     margin-top: 15px;
     margin-bottom: 15px;
-  }
-
-  .roll_over .roll_count {
-    margin: 5px;
   }
 
   .roll_over .bottom_content .bottom_content_text {
@@ -697,91 +693,97 @@ footer {
     margin-top: 36px;
   }
 
-  .subscribe_content {
+  .list_item {
     font-size: 27px;
   }
 
-  .subscribe_content_link {
-    margin-right: 5px;
-  }
-
   footer {
-    margin-top: 40px;
-    margin-bottom: 72px;
+    margin-top: 50px;
+    margin-bottom: 90px;
   }
 
   .footer_content {
     font-size: 12px;
-    line-height: 25px;
     width: 100%;
   }
 
-  .footer_parag img {
+  .footer_column {
+    max-width: 25%;
+  }
+
+  .footer_item {
+    padding: 5px 0;
+  }
+
+  .footer_img {
     width: 65px;
   }
 }
 @media (max-width: 425px) {
   header {
-    padding: 15px 0;
+    padding: 10px 0;
   }
 
-  .header_auth a {
-    font-size: 14px;
+  .header_link {
+    font-size: 11px;
   }
-  .header_auth a:first-of-type {
-    margin-right: 15px;
+  .header_link:first-of-type {
+    margin-right: 10px;
   }
 
   .header_logo {
-    width: 87px;
+    width: 65px;
   }
 
   .bar {
-    padding: 5px 0;
+    padding: 2px 0;
   }
 
-  .bar_search {
-    padding: 6px 0 5px;
-    font-size: 10px;
-    text-indent: 8px;
+  .bar_form > div {
+    margin-right: 4px;
   }
 
-  .bar_date_container {
-    padding: 0 5px;
+  .search_container {
+    min-width: 80px;
   }
 
-  .bar_date_text {
-    font-size: 10px;
+  .primary_field {
+    font-size: 8px;
+    padding: 4px 2px;
+  }
+
+  .date_container {
+    padding: 0;
+    min-width: 45px;
   }
 
   i.icon-calendar {
-    font-size: 16px;
+    font-size: 12px;
+    right: 3px;
+    transform: translateY(-40%);
   }
 
   .primary_btn {
-    font-size: 10px;
-    font-family: "GothamMedium", sans-serif;
-    padding: 6px 5px 5px;
-    background-color: #fff;
-    color: #3ba2d4;
-    border: none;
+    font-size: 8px;
+    padding: 4px 0 5px;
+    min-width: 50px;
   }
 
   .slider .item {
-    padding-top: 36px;
-    height: 380px;
+    padding-top: 27px;
+    height: 285px;
   }
 
   .slider_text {
-    font-size: 25px;
-    max-height: 82px;
+    font-size: 19px;
+    max-height: 44px;
   }
 
   .portfolio {
-    padding-top: 60px;
+    padding-top: 45px;
   }
 
-  .project_head_container h2, .head_container h2 {
+  .head {
     font-size: 20px;
   }
 
@@ -802,43 +804,38 @@ footer {
   }
 
   .portfolio_title {
-    font-size: 13px;
+    font-size: 10px;
     margin: 5px 0;
   }
 
   .portfolio_desc {
-    font-size: 12px;
-    line-height: 13px;
+    font-size: 9px;
+    line-height: 10px;
   }
 
   .subscribe {
-    margin-top: 36px;
+    margin-top: 27px;
     padding: 5px 0;
   }
 
-  .subscribe_content {
-    font-size: 27px;
+  .list_item {
+    font-size: 20px;
   }
 
   footer {
-    margin-top: 40px;
-    margin-bottom: 72px;
+    margin-top: 30px;
+    margin-bottom: 54px;
   }
 
   .footer_content {
-    font-size: 12px;
-    line-height: 25px;
+    font-size: 9px;
   }
 
-  .footer_parag img {
-    width: 65px;
+  .footer_img {
+    width: 49px;
   }
 }
 @media (max-width: 375px) {
-  header {
-    padding: 10px 0;
-  }
-
   .header_auth a {
     font-size: 11px;
   }
