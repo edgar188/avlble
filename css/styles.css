@@ -836,56 +836,43 @@ footer {
   }
 }
 @media (max-width: 375px) {
-  .header_auth a {
-    font-size: 11px;
+  .header_link {
+    font-size: 7px;
   }
-  .header_auth a:first-of-type {
-    margin-right: 10px;
+  .header_link:first-of-type {
+    margin-right: 5px;
   }
 
   .header_logo {
-    width: 65px;
+    width: 44px;
   }
 
-  .bar {
-    padding: 5px 0;
-  }
-
-  .bar_search {
-    padding: 7px 0 6px;
-    font-size: 8px;
-    text-indent: 6px;
-  }
-
-  .bar_date_container {
-    padding: 2px;
-  }
-
-  .bar_date_text {
-    font-size: 8px;
+  .primary_field {
+    padding: 3px 1px;
   }
 
   i.icon-calendar {
-    font-size: 12px;
+    transform: translateY(-35%);
   }
 
   .primary_btn {
     font-size: 8px;
-    font-family: "GothamMedium", sans-serif;
-    padding: 8px 5px;
-    background-color: #fff;
-    color: #3ba2d4;
-    border: none;
+    padding: 4px 0 3px;
+    min-width: 50px;
   }
 
   .slider .item {
-    padding-top: 27px;
-    height: 285px;
+    padding-top: 18px;
+    height: 190px;
   }
 
   .slider_text {
-    font-size: 19px;
-    max-height: 44px;
+    font-size: 12px;
+    max-height: 26px;
+  }
+
+  .footer_item {
+    padding: 3px 0;
   }
 }
 * {

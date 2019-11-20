@@ -277,6 +277,7 @@
 
     .header_link {
         font-size: round($header_link_fontsize * $multiply_size_tablet);
+
         &:first-of-type {
             margin-right: 10px;
         }
@@ -555,10 +556,11 @@
 
     // ------------------------------ Header ------------------------------------------
 
-    .header_auth a {
+    .header_link{
         font-size: round($header_link_fontsize * $multiply_size_mobile);
+
         &:first-of-type {
-            margin-right: 10px;
+            margin-right: 5px;
         }
     }
 
@@ -568,31 +570,20 @@
 
     // ------------------------------- Top Bar ----------------------------------------
 
-    .bar {
-        padding: 5px 0;
-    }
-
-    .bar_search {
-        padding: 7px 0 6px;
-        font-size: round($bar_text_fontsize * $multiply_size_mobile);
-        text-indent: round($bar_search_textindent * $multiply_size_mobile);
-    }
-
-    .bar_date_container {
-        padding: 2px;
-    }
-
-    .bar_date_text {
-        font-size: round($bar_text_fontsize * $multiply_size_mobile);
+    .primary_field {
+        padding: 3px 1px;
     }
 
     i.icon-calendar {
-        font-size: round($bar_icon_fontsize * $multiply_size_mobile);
+        transform: translateY(-35%);
     }
     
     .primary_btn {
-        @include button_mixin(round($bar_text_fontsize * $multiply_size_mobile), 8px 5px, $bg_light_color, $text_secondary_color);
+        font-size: round($bar_text_fontsize * $multiply_size_mobile_large);
+        padding: 4px 0 3px;
+        min-width: 50px;
     }
+
 
     // ---------------------------------- Slider -----------------------------------------
 
@@ -603,7 +594,14 @@
 
     .slider_text {
         font-size: round($slider_text_fontsize * $multiply_size_mobile);
-        max-height: round($slider_text_container_maxheight * $multiply_size_mobile - 100);
+        max-height: round($slider_text_container_maxheight * $multiply_size_mobile - 70);
     }
-   
+    
+    // ----------------------------------- Footer ----------------------------------------
+
+    .footer_item {
+        padding: 3px 0;
+    }
+    
+
 }
