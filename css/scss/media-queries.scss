@@ -461,14 +461,13 @@
     }
 
     .date_container {
-        padding: 0;
         min-width: 45px;
     }
 
     i.icon-calendar {
         font-size: round($bar_icon_fontsize * $multiply_size_mobile_large);
         right: 3px;
-        transform: translateY(-40%);
+        transform: translateY(-35%);
     }
     
     .primary_btn {

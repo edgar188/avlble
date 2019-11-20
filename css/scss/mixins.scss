@@ -9,15 +9,6 @@
     max-width: $max_width;
 }
 
-@mixin button_mixin($fontsize, $padding, $bc, $color, $border:none, $fontfamily: $gotham_medium) {
-    font-size: $fontsize;
-    font-family: $fontfamily;
-    padding: $padding;
-    background-color: $bc;
-    color: $color;
-    border: $border;
-}
-
 // ------------------------- Flex box mixins ----------------------------
 
 @mixin flex_mix {

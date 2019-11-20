@@ -1,5 +1,36 @@
 @import './fonts/font-icons/style.css';
 @import './fonts/Gotham-Font/style.css';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  font-family: "GothamMedium", sans-serif;
+}
+
 .ellipsis, .portfolio_title, .portfolio_desc, .head {
   white-space: nowrap;
   overflow: hidden;
@@ -67,6 +98,10 @@ header {
   -webkit-align-items: flex-end;
   align-items: flex-end;
   justify-content: space-between;
+}
+
+.header_logo_link:hover {
+  opacity: 1;
 }
 
 .header_link {
@@ -753,14 +788,13 @@ footer {
   }
 
   .date_container {
-    padding: 0;
     min-width: 45px;
   }
 
   i.icon-calendar {
     font-size: 12px;
     right: 3px;
-    transform: translateY(-40%);
+    transform: translateY(-35%);
   }
 
   .primary_btn {
@@ -874,36 +908,6 @@ footer {
   .footer_item {
     padding: 3px 0;
   }
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-a:hover {
-  opacity: 0.7;
-}
-
-a, button {
-  cursor: pointer;
-}
-
-input,
-textarea,
-button {
-  outline: none;
-}
-
-ul {
-  list-style-type: none;
-}
-
-main {
-  font-family: "GothamMedium", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

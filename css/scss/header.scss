@@ -9,6 +9,10 @@ header {
     justify-content: space-between;
 }
 
+.header_logo_link:hover {
+    opacity: 1;
+}
+
 .header_link{
     font-size: $header_link_fontsize;
     font-family: $gotham_bold;

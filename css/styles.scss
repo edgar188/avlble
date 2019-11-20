@@ -1,15 +1,4 @@
-@import './fonts/font-icons/style.css' , 
-        './fonts/Gotham-Font/style.css',
-        './scss/variables',
-        './scss/mixins',
-        './scss/global',
-        './scss/header',
-        './scss/bar',
-        './scss/slider',
-        './scss/portfolio',
-        './scss/subscribe',
-        './scss/footer',
-        './scss/media-queries.scss';
+@import './scss/variables';
 
 * {
     padding: 0;
@@ -42,3 +31,14 @@ main {
     font-family: $gotham_medium;
 }
 
+@import './fonts/font-icons/style.css' , 
+        './fonts/Gotham-Font/style.css',
+        './scss/mixins',
+        './scss/global',
+        './scss/header',
+        './scss/bar',
+        './scss/slider',
+        './scss/portfolio',
+        './scss/subscribe',
+        './scss/footer',
+        './scss/media-queries.scss';
